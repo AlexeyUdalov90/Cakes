@@ -1,0 +1,111 @@
+.main-nav {
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav__logo--header {
+  padding: 3px 0 3px 20px;
+
+  background: white;
+}
+
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+
+  padding: 0;
+  width: 18px;
+  height: 14px;
+
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #000000;
+    transition: all 0.4s;
+  }
+
+  &::before {
+    top: 0;
+
+    box-shadow: 0 6px 0 #000000;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.main-nav__button--active {
+  &::before {
+    top: 6px;
+
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    bottom: 6px;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__link {
+  @include reset-link;
+
+  cursor: pointer;
+}
+
+.main-nav__list--header {
+  position: absolute;
+  top: -500px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  font-size: 12px;
+
+  transition: all 0.6s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+
+  .main-nav__item:not(:first-child) {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .main-nav__link {
+    display: block;
+    padding: 15px 0 11px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: $nav-link-background;
+
+    &:hover,
+    &:active {
+      background-color: rgb(171, 171, 171);
+    }
+  }
+}
+
+.main-nav__list--show {
+  top: 100%;
+
+  visibility: visible;
+  opacity: 1;
+}

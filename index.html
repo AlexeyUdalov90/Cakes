@@ -8,10 +8,11 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="logo page-header__logo">
-      <a class="logo__link">Cakes</a>
-    </div>
-    <nav class="main-nav page-header__nav">
+    <nav class="main-nav page-header__nav page-header__nav--no-js">
+      <div class="logo main-nav__logo main-nav__logo--header">
+        <a class="logo__link logo__link--header">Cakes</a>
+      </div>
+      <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-nav__list--header">
         <li class="main-nav__item">
           <a href="#" class="main-nav__link">Наши торты</a>
@@ -44,11 +45,11 @@
     <section class="promo">
       <h2 class="promo__title">Торты на заказ</h2>
       <h3 class="promo__subtitle">Ручная работа</h3>
-      <button class="button promo__button" type="button">Выбрать торт</button>
       <ul class="promo__list">
         <li class="promo__item promo__item--stuff">Натуральные ингридиенты</li>
         <li class="promo__item promo__item--delivery">Доставка бесплатно при заказе от 2000 рублей<sup>*</sup></li>
       </ul>
+      <a href="#" class="button promo__button">Выбрать торт</a>
     </section>
 
     <section class="catalog">
@@ -326,11 +327,11 @@
   </main>
 
   <footer class="page-footer">
-    <div class="logo page-footer__logo">
-      <a class="logo__link">Cakes</a>
-    </div>
 
     <nav class="main-nav page-footer__nav">
+      <div class="logo main-nav__logo">
+        <a class="logo__link logo__link--footer">Cakes</a>
+      </div>
       <ul class="main-nav__list main-nav__list--footer">
         <li class="main-nav__item">
           <a href="#" class="main-nav__link">Наши торты</a>
@@ -377,7 +378,18 @@
   </footer>
 
   <script>
+    var navHead = document.querySelector('.page-header__nav');
+    var navButton = navHead.querySelector('.main-nav__button');
+    var navList = navHead.querySelector('.main-nav__list--header');
     var list = document.querySelector('.size-list');
+
+    navHead.classList.remove('page-header__nav--no-js');
+
+    navButton.addEventListener('click', function () {
+      navButton.classList.toggle('main-nav__button--active');
+      navList.classList.toggle('main-nav__list--show');
+    });
+
     list.addEventListener('click', function (evt) {
       if (evt.target.className === 'size-list__image') {
         var parent = evt.target.parentElement;

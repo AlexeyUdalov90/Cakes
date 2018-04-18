@@ -1,0 +1,18 @@
+.logo {
+  font-family: $other-font;
+  font-weight: 700;
+}
+
+.logo__link {
+  @include reset-link;
+
+  &--header {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &--footer {
+    font-size: 28px;
+    line-height: 43px;
+  }
+}
