@@ -8,3 +8,12 @@
   color: inherit;
   text-decoration: none;
 }
+
+@mixin block-title {
+  padding: 0;
+  margin: 0;
+
+  font-family: $other-font;
+  font-size: 24px;
+  font-weight: 700;
+}

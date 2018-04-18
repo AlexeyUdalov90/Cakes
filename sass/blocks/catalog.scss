@@ -1,0 +1,21 @@
+.catalog {
+  padding: 0 20px;
+}
+
+.catalog__title {
+  @include block-title;
+  margin-bottom: 28px;
+
+  text-align: center;
+}
+
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__item {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 280px;
+  min-height: 120px;
+}

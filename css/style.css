@@ -185,6 +185,9 @@ img {
     -webkit-box-shadow: 0 3px 6px 1px rgba(255, 0, 67, 0.3);
             box-shadow: 0 3px 6px 1px rgba(255, 0, 67, 0.3); }
 
+.page-main__promo {
+  margin-bottom: 45px; }
+
 .promo {
   padding: 0 20px;
   text-align: center; }
@@ -212,6 +215,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0 auto;
+  width: 280px;
   text-align: left; }
 
 .promo__item {
@@ -232,3 +237,57 @@ img {
   text-decoration: none;
   display: inline-block;
   color: #ffffff; }
+
+.catalog {
+  padding: 0 20px; }
+
+.catalog__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", "Times", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: center; }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 280px;
+  min-height: 120px; }
+
+.catalog-card {
+  position: relative;
+  -webkit-box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.05);
+          box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.05); }
+
+.catalog-card__link {
+  color: inherit;
+  text-decoration: none; }
+
+.catalog-card__image {
+  width: 280px;
+  height: 120px; }
+
+.catalog-card__title {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400; }
+
+.catalog-card__amount {
+  font-size: 12px;
+  opacity: 0.7; }
+
+.catalog-card__text-block {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.catalog-card__arrow {
+  display: none; }
