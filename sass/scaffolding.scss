@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  min-width: 320px;
+
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: normal;
+  color: $font-color;
+
+  background-color: $body-background;
+  background-image: url("../img/cake1-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -168px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

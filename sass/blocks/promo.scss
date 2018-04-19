@@ -1,0 +1,53 @@
+.promo {
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.promo__title {
+  @include block-title;
+  margin-bottom: 15px;
+
+  font-size: 40px;
+}
+
+.promo__subtitle {
+  @include block-subtitle;
+  margin-bottom: 15px;
+}
+
+.promo__list {
+  @include reset-list;
+
+  margin: 0 auto;
+  width: 280px;
+
+  text-align: left;
+}
+
+.promo__item {
+  position: relative;
+
+  padding-left: 42px;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background-color: #f75885;
+  }
+}
+
+.promo__button {
+  @include reset-link;
+
+  display: inline-block;
+
+  color: #ffffff;
+}

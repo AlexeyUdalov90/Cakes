@@ -1,0 +1,38 @@
+.catalog-card {
+  position: relative;
+
+  box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.05);
+}
+
+.catalog-card__link {
+  @include reset-link;
+}
+
+.catalog-card__image {
+  width: 280px;
+  height: 120px;
+}
+
+.catalog-card__title {
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.catalog-card__amount {
+  font-size: 12px;
+
+  opacity: 0.7;
+}
+
+.catalog-card__text-block {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.catalog-card__arrow {
+  display: none;
+}

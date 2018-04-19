@@ -1,0 +1,30 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin block-title($color: $font-color) {
+  padding: 0;
+  margin: 0;
+
+  font-family: $other-font;
+  font-size: 24px;
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin block-subtitle($color: $font-color) {
+  padding: 0;
+  margin: 0;
+
+  font-family: $decor-font;
+  font-size: 22px;
+  font-weight: 400;
+  color: $color;
+}

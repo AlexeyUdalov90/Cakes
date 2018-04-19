@@ -1,0 +1,29 @@
+.choice-block {
+  padding: 8px 20px 25px;
+
+  width: 280px;
+
+  background-color: #ffffff;
+  border: none;
+  box-sizing: border-box;
+}
+
+.choice-block__title {
+  @include block-title($choice-title-color);
+  margin-bottom: 25px;
+
+  font-size: 16px;
+}
+
+.choice-block__number {
+  padding-right: 13px;
+
+  font-size: 30px;
+  line-height: 1;
+}
+
+.choice-block__slider {
+  width: 240px;
+
+  overflow: hidden;
+}

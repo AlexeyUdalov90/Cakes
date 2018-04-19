@@ -1,0 +1,45 @@
+.size-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.size-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 240px;
+
+  text-align: center;
+}
+
+.size-list__image {
+  position: relative;
+  margin: auto 0;
+
+  &::before {
+    content: attr(data-weight);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 16px;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.size-list__text {
+  margin-top: 40px;
+}
+
+.size-list__button {
+  margin-top: 50px;
+  padding: 17px 60px;
+}
