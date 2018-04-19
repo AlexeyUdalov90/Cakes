@@ -1,0 +1,17 @@
+.social-list {
+  @include reset_list;
+}
+
+.social-list__item {
+  margin-bottom: 15px;
+}
+
+.social-list__link {
+  @include reset-link;
+  display: block;
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}

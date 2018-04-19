@@ -1,0 +1,87 @@
+.about-us {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+}
+
+.about-us__title {
+  @include block-title;
+
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-bottom: 25px;
+}
+
+.about-us__photo {
+  margin-right: 34px;
+  margin-bottom: 10px;
+  width: 156px;
+  height: 156px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-us__subtitle {
+  @include block-subtitle;
+
+  margin-bottom: 10px;
+}
+
+.about-us__topic {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.about-us__text {
+  margin: 0;
+}
+
+.about-us__text + .about-us__topic {
+  margin-top: 15px;
+}
+
+.about-us__quote {
+  display: inline-block;
+
+  font-family: $other-font;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+
+  quotes: none;
+
+  &::before {
+    content: "\275C\275C";
+    display: block;
+
+    font-size: 30px;
+    line-height: 1;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 64px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    background-image: url("../img/signature-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

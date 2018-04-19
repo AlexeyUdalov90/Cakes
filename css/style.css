@@ -20,6 +20,13 @@
   font-display: swap; }
 
 @font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfairdisplaybolditalic.woff2") format("woff2"), url("../fonts/playfairdisplaybolditalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap; }
+
+@font-face {
   font-family: "Intro Script";
   src: url("../fonts/introscript.otf") format("opentype");
   font-style: normal;
@@ -650,3 +657,103 @@ img {
 .reviews__link {
   font-style: italic;
   color: #f50049; }
+
+.about-us {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px; }
+
+.about-us__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", "Times", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 25px;
+  text-align: center; }
+
+.about-us__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+.about-us__photo {
+  margin-right: 34px;
+  margin-bottom: 10px;
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.about-us__subtitle {
+  padding: 0;
+  margin: 0;
+  font-family: "Intro Script", "Comic Sans MS", cursive;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px; }
+
+.about-us__topic {
+  display: inline-block;
+  margin-bottom: 8px; }
+
+.about-us__text {
+  margin: 0; }
+
+.about-us__text + .about-us__topic {
+  margin-top: 15px; }
+
+.about-us__quote {
+  display: inline-block;
+  font-family: "Playfair Display", "Times", serif;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  quotes: none; }
+  .about-us__quote::before {
+    content: "\275C\275C";
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    color: #ffffff;
+    letter-spacing: 2px; }
+  .about-us__quote::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url("../img/signature-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social-list__item {
+  margin-bottom: 15px; }
+
+.social-list__link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff; }
