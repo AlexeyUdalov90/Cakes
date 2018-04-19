@@ -130,109 +130,99 @@
       </ul>
     </section>
 
-    <section class="order">
+    <section class="order page-main__order">
       <h2 class="order__title">Индивидуальный заказ</h2>
       <h3 class="order__subtitle">Соберите торт в 3 шага</h3>
+
+      <div class="choice-block order__choice-block">
+        <h4 class="choice-block__title"><span class="choice-block__number">01</span>Выберите начинку</h4>
+        <div class="choice-block__slider">
+          <ul class="filling-list choice-block__list">
+            <li class="filling-list__item">
+              <div class="filling-list__image"><img src="img/filling-mobile.jpg" alt="Шоколадный ганаш" width="241" height="113"></div>
+              <div class="filling-list__description">
+                <b class="filling-list__name">Шоколадный ганаш</b>
+                <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+              </div>
+              <span class="filling-list__price">1000 руб/кг</span>
+              <input type="radio" name="filling" id="chocolate" value="chocolate" class="visually-hidden">
+              <label for="chocolate" class="button filling-list__button">Выбрать</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="choice-block order__choice-block">
+        <h4 class="choice-block__title"><span class="choice-block__number">02</span>Размер</h4>
+        <div class="choice-block__slider choice-block__slider--size">
+          <ul class="size-list choice-block__list">
+            <li class="size-list__item">
+              <div class="size-list__image" data-weight="1 кг"><img src="img/size1-tablet.png" alt="Размер торта" width="77" height="77"></div>
+              <span class="size-list__text">17-18 см<br>(1 кг – 6 персон)</span>
+              <input type="radio" name="size" id="size1" value="1" class="visually-hidden">
+              <label for="size1" class="button size-list__button">Выбрать</label>
+            </li>
+            <li class="size-list__item">
+              <div class="size-list__image" data-weight="2 кг"><img src="img/size2-tablet.png" alt="Размер торта" width="107" height="107"></div>
+              <span class="size-list__text">23-24 см<br>(10–12 персон)</span>
+              <input type="radio" name="size" id="size2" value="2" class="visually-hidden">
+              <label for="size1" class="button size-list__button">Выбрать</label>
+            </li>
+            <li class="size-list__item">
+              <div class="size-list__image" data-weight="5 кг"><img src="img/size5-tablet.png" alt="Размер торта" width="120" height="120"></div>
+              <span class="size-list__text">Два яруса 25 и 20 см<br>(15–20 персон)</span>
+              <input type="radio" name="size" id="size3" value="3" class="visually-hidden">
+              <label for="size1" class="button size-list__button">Выбрать</label>
+            </li>
+            <li class="size-list__item">
+              <div class="size-list__image" data-weight="8 кг"><img src="img/size8-tablet.png" alt="Размер торта" width="140" height="140"></div>
+              <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25–30 персон)</span>
+              <input type="radio" name="size" id="size4" value="4" class="visually-hidden">
+              <label for="size1" class="button size-list__button">Выбрать</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="choice-block order__choice-block order__choice-block--decor">
+        <h4 class="choice-block__title"><span class="choice-block__number">03</span>Оформление</h4>
+        <div class="choice-block__slider choice-block__slider--decor">
+          <ul class="decor-list choice-block__list">
+            <li class="decor-list__item">
+              <div class="decor-list__image"><img src="img/decor1-mobile.jpg" alt="Ягодное ассорти" width="162" height="140"></div>
+              <span class="decor-list__name">Ягодное ассорти</span>
+              <span class="decor-list__price">700 руб/кг</span>
+              <input type="radio" name="decor" id="decor1" value="1" class="visually-hidden">
+              <label for="decor1" class="button decor-list__button">Выбрать</label>
+            </li>
+            <li class="decor-list__item">
+              <div class="decor-list__image"><img src="img/decor2-mobile.jpg" alt="Маршмэллоу" width="160" height="140"></div>
+              <span class="decor-list__name">Маршмэллоу</span>
+              <span class="decor-list__price">600 руб/кг</span>
+              <input type="radio" name="decor" id="decor2" value="2" class="visually-hidden">
+              <label for="decor2" class="button decor-list__button">Выбрать</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <form action="" method="post" class="order-form order__form">
         <fieldset class="order-form__block">
-          <legend class="order-form__title"><span class="order-form__number">01</span>Выберите начинку</legend>
-          <div class="order-form__wrapper">
-            <ul class="filling-list order-form__list">
-              <li class="filling-list__item">
-                <div class="filling-list__image"><img src="" alt="Шоколадный ганаш" width="344" height="390"></div>
-                <div class="filling-list__description">
-                  <b class="filling-list__title">Шоколадный ганаш</b>
-                  <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                  <span class="filling-list__price">1000 руб/кг</span>
-                </div>
-                <label class="button filling-list__button">
-                  <input type="radio" name="filling" value="chocolate" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__block">
-          <legend class="order-form__title"><span class="order-form__number">02</span>Размер</legend>
-          <div class="order-form__wrapper">
-            <ul class="size-list order-form__list">
-              <li class="size-list__item">
-                <div class="size-list__image" data-weight="1 кг"><img src="" alt="" width="110" height="110"></div>
-                <span class="size-list__text">17-18 см<br>(1 кг – 6 персон)</span>
-                <label class="button filling-list__button">
-                  <input type="radio" name="size" value="1" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-              <li class="size-list__item">
-                <div class="size-list__image" data-weight="2 кг"><img src="" alt="" width="154" height="154"></div>
-                <span class="size-list__text">23-24 см<br>(10–12 персон)</span>
-                <label class="button filling-list__button">
-                  <input type="radio" name="size" value="2" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-              <li class="size-list__item">
-                <div class="size-list__image" data-weight="5 кг"><img src="" alt="" width="173" height="174"></div>
-                <span class="size-list__text">Два яруса 25 и 20 см<br>(15–20 персон)</span>
-                <label class="button filling-list__button">
-                  <input type="radio" name="size" value="3" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-              <li class="size-list__item">
-                <div class="size-list__image" data-weight="8 кг"><img src="" alt="" width="200" height="202"></div>
-                <span class="size-list__text">Три яруса 30,25 и 18 см<br>(25–30 персон)</span>
-                <label class="button filling-list__button">
-                  <input type="radio" name="size" value="4" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__block">
-          <legend class="order-form__title"><span class="order-form__number">03</span>Оформление</legend>
-          <div class="order-form__wrapper">
-            <ul class="decor-list order-form__list">
-              <li class="decor-list__item">
-                <div class="decor-list__image"><img src="" alt="" width="322" height="280"></div>
-                <span class="decor-list__name">Ягодное ассорти</span>
-                <span class="decor-list__price">700 руб/кг</span>
-                <label class="button decor-list__button">
-                  <input type="radio" name="decor" value="1" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-              <li class="decor-list__item">
-                <div class="decor-list__image"><img src="" alt="" width="322" height="280"></div>
-                <span class="decor-list__name">Маршмэллоу</span>
-                <span class="decor-list__price">600 руб/кг</span>
-                <label class="button decor-list__button">
-                  <input type="radio" name="decor" value="2" class="visually-hidden">
-                  Выбрать
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__block">
-          <legend class="order-form__title">Ваш выбор</legend>
-          <p class="input-text">
+          <legend class="order-form__title order-form__title--result">Ваш выбор</legend>
+          <p class="input-text order-form__input input-text--order">
             <label for="result-filling" class="input-text__label">Начинка</label>
-            <input type="text" class="input-text__field" name="result-filling" id="result-filling" placeholder="Выберите начинку">
+            <input type="text" class="input-text__field" name="result-filling" id="result-filling" placeholder="Выберите начинку" readonly required>
           </p>
-          <p class="input-text">
+          <p class="input-text order-form__input input-text--order">
             <label for="result-size" class="input-text__label">Размер</label>
-            <input type="text" class="input-text__field" name="result-size" id="result-size" placeholder="Выберите размер">
+            <input type="text" class="input-text__field" name="result-size" id="result-size" placeholder="Выберите размер" readonly required>
           </p>
-          <p class="input-text">
+          <p class="input-text order-form__input input-text--order">
             <label for="result-decor" class="input-text__label">Оформление</label>
-            <input type="text" class="input-text__field" name="result-decor" id="result-decor" placeholder="Выберите оформление">
+            <input type="text" class="input-text__field" name="result-decor" id="result-decor" placeholder="Выберите оформление" readonly required>
           </p>
         </fieldset>
-        <button type="submit" class="button order__form__button">Заказать торт</button>
+        <button type="submit" class="button order-form__button">Заказать торт</button>
       </form>
     </section>
 
@@ -426,13 +416,13 @@
       navList.classList.toggle('main-nav__list--show');
     });
 
-    list.addEventListener('click', function (evt) {
-      if (evt.target.className === 'size-list__image') {
-        var parent = evt.target.parentElement;
-        var radio = parent.querySelector('input[type="radio"]');
-        radio.checked = true;
-      }
-    });
+    // list.addEventListener('click', function (evt) {
+    //   if (evt.target.className === 'size-list__image') {
+    //     var parent = evt.target.parentElement;
+    //     var radio = parent.querySelector('input[type="radio"]');
+    //     radio.checked = true;
+    //   }
+    // });
   </script>
 </body>
 </html>

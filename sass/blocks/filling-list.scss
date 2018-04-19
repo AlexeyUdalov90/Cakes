@@ -1,0 +1,45 @@
+.filling-list {
+  @include reset-list;
+}
+
+.filling-list__item {
+  text-align: center;
+}
+
+.filling-list__image {
+  margin-bottom: 35px;
+  width: 240px;
+  height: 113px;
+
+  background-color: $filling-img-background;
+}
+
+.filling-list__description {
+  text-align: left;
+}
+
+.filling-list__name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filling-list__text {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.filling-list__price {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: $other-font;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.filling-list__button {
+  display: inline-block;
+  padding: 17px 60px;
+}

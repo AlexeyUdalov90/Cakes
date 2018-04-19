@@ -5,28 +5,15 @@
 }
 
 .promo__title {
-  margin: 0 auto;
+  @include block-title;
   margin-bottom: 15px;
-  padding: 0;
 
-  width: 200px;
-
-  font-family: $other-font;
   font-size: 40px;
-  line-height: 36px;
-  font-weight: 700;
 }
 
 .promo__subtitle {
-  margin: 0 auto;
+  @include block-subtitle;
   margin-bottom: 15px;
-  padding: 0;
-
-  width: 200px;
-
-  font-family: $decor-font;
-  font-size: 22px;
-  font-weight: 400;
 }
 
 .promo__list {

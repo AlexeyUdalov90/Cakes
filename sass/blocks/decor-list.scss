@@ -1,0 +1,47 @@
+.decor-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.decor-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 240px;
+}
+
+.decor-list__image {
+  display: flex;
+  margin-bottom: 35px;
+
+  width: 170px;
+  height: 196px;
+
+  box-shadow: 0 2px 5px rgba(255, 0, 67, 0.1);
+
+  img {
+    margin: auto 0;
+  }
+}
+
+.decor-list__name {
+  margin-bottom: 5px;
+}
+
+.decor-list__price {
+  margin-bottom: 30px;
+
+  font-family: $other-font;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.decor-list__button {
+  display: inline-block;
+  padding: 17px 60px;
+}

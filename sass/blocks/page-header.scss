@@ -1,13 +1,17 @@
 .page-header {
-  margin-bottom: 130px;
+  // margin-bottom: 130px;
   width: 100%;
 }
 
 .page-header__nav {
+  margin-bottom: 130px;
+
   background-color: #ffffff;
 }
 
 .page-header__nav--no-js {
+  margin-bottom: 0;
+
   .main-nav__list--header {
     position: static;
 

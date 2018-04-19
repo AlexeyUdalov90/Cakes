@@ -1,0 +1,35 @@
+.order-form {
+  margin: 0 auto;
+  padding: 8px 20px 25px;
+
+  width: 240px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.order-form__block {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.order-form__title {
+  @include block-title;
+
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  text-align: left;
+}
+
+.order-form__input {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.order-form__button {
+  padding: 17px 62px;
+}

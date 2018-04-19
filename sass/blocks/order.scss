@@ -1,0 +1,29 @@
+.order {
+  padding: 0 20px;
+}
+
+.order__title {
+  @include block-title;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 78.5%;
+  max-width: 355px;
+
+  text-align: center;
+}
+
+.order__subtitle {
+  @include block-subtitle;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.order__choice-block {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  &--decor {
+    margin-bottom: 0;
+  }
+}
