@@ -14,4 +14,13 @@
 
   border-radius: 50%;
   background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 8px rgba(255, 0, 67, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0 3px 6px rgba(255, 0, 67, 0.2);
+  }
 }
