@@ -1,0 +1,54 @@
+.contacts {
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 280px;
+}
+
+.contacts__title {
+  @include block-title;
+  text-align: center;
+}
+
+.contacts__subtitle {
+  @include block-subtitle;
+
+  margin-bottom: 5px;
+}
+
+.contacts__text {
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.contacts__form {
+  margin-bottom: 25px;
+  width: 280px;
+
+  text-align: center;
+}
+
+.contacts__input {
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__button {
+  padding: 17px 50px;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__item {
+  margin-bottom: 15px;
+}
+
+.contacts__link {
+  @include reset-link;
+}

@@ -1,0 +1,30 @@
+.page-footer {
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 35px;
+  width: 280px;
+
+  color: #ffffff;
+  background-color: $footer-background;
+}
+
+.page-footer__phone {
+  margin-bottom: 15px;
+
+  a {
+    @include reset-link;
+  }
+}
+
+.page-footer__social {
+  margin-bottom: 20px;
+}
+
+.page-footer__copyright {
+  padding: 8px 0;
+
+  font-size: 12px;
+
+  opacity: 0.5;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}

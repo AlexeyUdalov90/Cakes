@@ -32,3 +32,27 @@
     }
   }
 }
+
+.input-text--question {
+  margin: 0;
+
+  .input-text__field {
+    padding: 17px 11px;
+    width: 100%;
+
+    font: inherit;
+
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+
+    &--textarea {
+      resize: none;
+    }
+
+    &::placeholder {
+      color: $font-color;
+      opacity: 0.2;
+    }
+  }
+}

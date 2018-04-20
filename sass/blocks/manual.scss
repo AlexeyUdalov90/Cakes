@@ -1,0 +1,56 @@
+.manual {
+  margin: 0 auto;
+  padding: 30px 20px 145px;
+  width: 280px;
+
+  color: #ffffff;
+
+  background-color: $manual-background;
+  background-image: url("../img/manual-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.manual__title {
+  @include block-title(#ffffff);
+
+  margin-bottom: 35px;
+
+  text-align: center;
+}
+
+.manual__list {
+  @include reset-list;
+
+  counter-reset: myCounter;
+}
+
+.manual__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 46px;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+
+    position: absolute;
+    top: -11px;
+    left: 20px;
+
+    font-family: $other-font;
+    font-size: 35px;
+    line-height: 1;
+  }
+}
+
+.manual__topic {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.manual__text {
+  padding: 0;
+  margin: 0;
+}
