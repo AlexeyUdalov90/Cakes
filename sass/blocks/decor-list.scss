@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  box-sizing: border-box;
 }
 
 .decor-list__item {

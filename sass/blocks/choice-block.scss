@@ -1,11 +1,9 @@
 .choice-block {
   padding: 8px 20px 15px;
 
-  width: 280px;
+  width: 240px;
 
   background-color: #ffffff;
-  border: none;
-  box-sizing: border-box;
 }
 
 .choice-block__title {
@@ -26,4 +24,8 @@
   width: 240px;
 
   overflow: hidden;
+
+  input[type="radio"] {
+    display: none;
+  }
 }

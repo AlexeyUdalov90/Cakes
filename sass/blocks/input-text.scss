@@ -20,11 +20,13 @@
     width: 100%;
 
     font: inherit;
+    font-size: 14px;
     text-align: center;
 
     border: 1px solid $order-input-border;
     border-radius: 15px;
     box-sizing: border-box;
+    appearance: none;
 
     &::placeholder {
       color: $font-color;
@@ -41,10 +43,12 @@
     width: 100%;
 
     font: inherit;
+    font-size: 14px;
 
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
+    appearance: none;
 
     &--textarea {
       resize: none;
