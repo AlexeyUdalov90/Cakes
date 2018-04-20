@@ -40,11 +40,21 @@
     top: 0;
     left: 50%;
 
-    width: 84px;
-    height: 61px;
+    width: 85px;
+    height: 62px;
 
     transform: translateX(-50%);
-    background-color: #f75885;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--stuff::before {
+    background-image: url("../img/stuff-icon-big.svg");
+  }
+
+  &--fresh::before {
+    background-image: url("../img/fresh-icon.png");
+    background-size: contain;
   }
 }
 

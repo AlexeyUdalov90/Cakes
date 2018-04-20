@@ -3,10 +3,32 @@
   z-index: 1;
 }
 
-.main-nav__logo--header {
-  padding: 3px 0 3px 20px;
+.main-nav__logo {
+  font-family: $other-font;
+  font-weight: 700;
 
-  background: white;
+  &--header {
+    padding: 3px 0 3px 20px;
+
+    background: white;
+  }
+}
+
+.main-nav__logo-link {
+  @include reset-link;
+  display: inline-block;
+
+  &--header {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  &--footer {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+    line-height: 43px;
+  }
 }
 
 .main-nav__list {
@@ -70,7 +92,7 @@
   cursor: pointer;
 }
 
-.main-nav__list--header {
+.main-nav__list--header {  //навигация в header
   position: absolute;
   top: -500px;
   left: 0;
@@ -108,4 +130,10 @@
 
   visibility: visible;
   opacity: 1;
+}
+
+.main-nav__list--footer {
+  .main-nav__item {
+    margin-bottom: 15px;
+  }
 }
