@@ -1,14 +1,16 @@
 .manual {
-  margin: 0 auto;
-  padding: 30px 20px 145px;
-  width: 280px;
-
   color: #ffffff;
 
   background-color: $manual-background;
   background-image: url("../img/manual-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.manual__wrapper {
+  margin: 0 auto;
+  padding: 30px 20px 145px;
+  width: 280px;
 }
 
 .manual__title {

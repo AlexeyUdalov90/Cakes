@@ -31,10 +31,6 @@
   }
 }
 
-.main-nav__list {
-  @include reset-list;
-}
-
 .main-nav__button {
   position: absolute;
   top: 12px;
@@ -86,6 +82,10 @@
   }
 }
 
+.main-nav__list {
+  @include reset-list;
+}
+
 .main-nav__link {
   @include reset-link;
 
@@ -94,20 +94,17 @@
 
 .main-nav__list--header {  //навигация в header
   position: absolute;
-  top: -500px;
+  top: -300px;
   left: 0;
   right: 0;
   z-index: -1;
 
   font-size: 12px;
 
+  background-color: $nav-link-background;
   transition: all 0.6s ease-in-out;
   visibility: hidden;
   opacity: 0;
-
-  .main-nav__item:not(:first-child) {
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
-  }
 
   .main-nav__link {
     display: block;
@@ -116,12 +113,14 @@
     text-align: center;
     text-transform: uppercase;
 
-    background-color: $nav-link-background;
-
     &:hover,
     &:active {
       background-color: rgb(171, 171, 171);
     }
+  }
+
+  .main-nav__item:not(:first-child) .main-nav__link {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
   }
 }
 
