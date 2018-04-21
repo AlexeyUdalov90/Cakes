@@ -6,43 +6,45 @@
   <title>Cakes</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
-    <nav class="main-nav page-header__nav page-header__nav--no-js">
-      <div class="main-nav__logo main-nav__logo--header">
-        <a class="main-nav__logo-link main-nav__logo-link--header">Cakes</a>
+    <div class="content-wrapper page-header__wrapper">
+      <nav class="main-nav page-header__nav main-nav--no-js">
+        <div class="main-nav__logo main-nav__logo--header">
+          <a class="main-nav__logo-link main-nav__logo-link--header">Cakes</a>
+        </div>
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list main-nav__list--header">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Наши торты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Индивидуальный заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Как заказать</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__phone">
+        <a href="tel:+79068999296"  title="Позвоните нам">+7 906 899 92 96</a>
       </div>
-      <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list main-nav__list--header">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Наши торты</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Индивидуальный заказ</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Отзывы</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">О нас</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Как заказать</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="page-header__phone">
-      <a href="tel:+79068999296"  title="Позвоните нам">+7 906 899 92 96</a>
     </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Мы изготавливаем вкусные и красивые торты</h1>
 
-    <section class="promo page-main__promo">
+    <section class="promo content-wrapper page-main__promo">
       <h2 class="promo__title">Торты на заказ</h2>
       <h3 class="promo__subtitle">Ручная работа</h3>
       <ul class="promo__list">
@@ -52,13 +54,16 @@
       <a href="#" class="button promo__button">Выбрать торт</a>
     </section>
 
-    <section class="catalog page-main__catalog">
+    <section class="catalog content-wrapper page-main__catalog">
       <h2 class="catalog__title">Наши торты</h2>
       <ul class="catalog__list">
         <li class="catalog-card catalog__item catalog__item--big">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake1-mobile.jpg" alt="Классический торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake1-tablet.jpg">
+                <img src="img/catalog-cake1-mobile.jpg" alt="Классический торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Классические</h3>
@@ -70,7 +75,10 @@
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake2-mobile.jpg" alt="Мусовый торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake2-tablet.jpg">
+                <img src="img/catalog-cake2-mobile.jpg" alt="Мусовый торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Мусовые</h3>
@@ -82,7 +90,10 @@
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake3-mobile.jpg" alt="Свадебный торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake3-tablet.jpg">
+                <img src="img/catalog-cake3-mobile.jpg" alt="Свадебный торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Свадебные</h3>
@@ -94,7 +105,10 @@
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake4-mobile.jpg" alt="Мужской торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake4-tablet.jpg">
+                <img src="img/catalog-cake4-mobile.jpg" alt="Мужской торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Мужчинам</h3>
@@ -106,7 +120,10 @@
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake5-mobile.jpg" alt="Женский торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake5-tablet.jpg">
+                <img src="img/catalog-cake5-mobile.jpg" alt="Женский торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Женщинам</h3>
@@ -118,7 +135,10 @@
         <li class="catalog-card catalog__item catalog__item--big">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
-              <img src="img/catalog-cake6-mobile.jpg" alt="Детский торт" width="280" height="120">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-cake6-tablet.jpg">
+                <img src="img/catalog-cake6-mobile.jpg" alt="Детский торт" width="280" height="120">
+              </picture>
             </div>
             <div class="catalog-card__text-block">
               <h3 class="catalog-card__title">Детские</h3>
@@ -130,7 +150,7 @@
       </ul>
     </section>
 
-    <section class="order page-main__order">
+    <section class="order content-wrapper page-main__order">
       <h2 class="order__title">Индивидуальный заказ</h2>
       <h3 class="order__subtitle">Соберите торт в 3 шага</h3>
 
@@ -238,7 +258,7 @@
       </form>
     </section>
 
-    <section class="reviews page-main__reviews">
+    <section class="reviews content-wrapper page-main__reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider">
         <ul class="reviews__list">
@@ -258,7 +278,7 @@
       </div>
     </section>
 
-    <section class="about-us page-main__about-us">
+    <section class="about-us content-wrapper page-main__about-us">
       <h2 class="about-us__title">О нас</h2>
       <div class="about-us__wrapper">
         <div class="about-us__photo"><img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155"></div>
@@ -316,7 +336,7 @@
         </ul>
       </section>
 
-      <section class="care">
+      <section class="care content-wrapper">
         <h2 class="care__title">Забота о клиентах</h2>
         <h3 class="care__subtitle">Для нас важно</h3>
         <p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
@@ -343,25 +363,27 @@
       </div>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <h3 class="contacts__subtitle">Остались вопросы?</h3>
-      <b class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</b>
-      <form action="" method="post" class="contacts__form">
-        <p class="input-text contacts__input input-text--question">
-          <label for="name" class="visually-hidden"></label>
-          <input type="text" name="name" id="name" class="input-text__field input-text__field--contacts" placeholder="Ваше имя">
-        </p>
-        <p class="input-text contacts__input input-text--question">
-          <label for="email" class="visually-hidden"></label>
-          <input type="email" name="email" id="email" class="input-text__field input-text__field--contacts" placeholder="Email адрес">
-        </p>
-        <p class="input-text contacts__input input-text--question">
-          <label for="question" class="visually-hidden"></label>
-          <textarea name="question" id="question" rows="6" class="input-text__field input-text__field--textarea input-text__field--contacts" placeholder="Ваш вопрос"></textarea>
-        </p>
-        <button type="submit" class="button contacts__button">Отправить</button>
-      </form>
+    <section class="contacts content-wrapper">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <h3 class="contacts__subtitle">Остались вопросы?</h3>
+        <b class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</b>
+        <form action="" method="post" class="contacts__form">
+          <p class="input-text contacts__input input-text--question">
+            <label for="name" class="visually-hidden"></label>
+            <input type="text" name="name" id="name" class="input-text__field input-text__field--contacts" placeholder="Ваше имя">
+          </p>
+          <p class="input-text contacts__input input-text--question">
+            <label for="email" class="visually-hidden"></label>
+            <input type="email" name="email" id="email" class="input-text__field input-text__field--contacts" placeholder="Email адрес">
+          </p>
+          <p class="input-text contacts__input input-text--question">
+            <label for="question" class="visually-hidden"></label>
+            <textarea name="question" id="question" rows="6" class="input-text__field input-text__field--textarea input-text__field--contacts" placeholder="Ваш вопрос"></textarea>
+          </p>
+          <button type="submit" class="button contacts__button">Отправить</button>
+        </form>
+      </div>
       <ul class="contacts__list">
         <li class="contacts__item">
           Или позвоните по телефону:<br><a href="tel:+79068999296" class="contacts__link">+7 906 899 92 96</a>
@@ -395,7 +417,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="content-wrapper page-footer__wrapper ">
       <nav class="main-nav page-footer__nav">
         <div class="main-nav__logo main-nav__logo--footer">
           <a class="main-nav__logo-link main-nav__logo-link--footer">Cakes</a>
@@ -457,7 +479,7 @@
     var navList = navHead.querySelector('.main-nav__list--header');
     var list = document.querySelector('.size-list');
 
-    navHead.classList.remove('page-header__nav--no-js');
+    navHead.classList.remove('main-nav--no-js');
 
     navButton.addEventListener('click', function () {
       navButton.classList.toggle('main-nav__button--active');

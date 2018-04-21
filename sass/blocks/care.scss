@@ -1,6 +1,5 @@
 .care {
   margin: 0 auto;
-  padding: 0 20px;
   padding-top: 40px;
   width: 280px;
 }
@@ -9,10 +8,14 @@
   @include block-title;
 
   margin-bottom: 5px;
+
+  font-size: 24px;
 }
 
 .care__subtitle {
   @include block-subtitle;
+
+  font-size: 22px;
 }
 
 .care__text {
