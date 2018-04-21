@@ -29,3 +29,28 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .order__title {
+    font-size: 28px;
+  }
+
+  .order__subtitle {
+    margin-bottom: 27px;
+
+    font-size: 26px;
+  }
+
+  .order__choice-block {
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--decor {
+      margin-bottom: 0;
+
+      background-image: url("../img/decor-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 20px 120px;
+    }
+  }
+}

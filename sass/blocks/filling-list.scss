@@ -1,5 +1,10 @@
 .filling-list {
   @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .filling-list__item {
@@ -43,4 +48,46 @@
   display: inline-block;
   padding: 17px 60px;
   margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .filling-list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 20px 10px;
+
+    text-align: left;
+  }
+
+  .filling-list__image {
+    flex-shrink: 0;
+
+    width: 210px;
+    height: 237px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .filling-list__wrapper {
+    width: 250px;
+  }
+
+  .filling-list__description {
+    padding-top: 20px;
+  }
+
+  .filling-list__name {
+    font-size: 18px;
+  }
+
+  .filling-list__price {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .filling-list__button {
+    padding: 17px 47px;
+  }
 }
