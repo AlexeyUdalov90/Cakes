@@ -1,7 +1,11 @@
 .promo {
-  padding: 0 20px;
+  padding-top: 130px;
 
   text-align: center;
+
+  background-image: url("../img/cake1-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -205px;
 }
 
 .promo__title {
@@ -13,7 +17,10 @@
 
 .promo__subtitle {
   @include block-subtitle;
+
   margin-bottom: 15px;
+
+  font-size: 22px;
 }
 
 .promo__list {
@@ -31,6 +38,8 @@
   padding-left: 42px;
   margin-bottom: 30px;
 
+  box-sizing: border-box;
+
   &::before {
     content: "";
     position: absolute;
@@ -45,11 +54,11 @@
   }
 
   &--stuff::before {
-    background-image: url("../img/stuff-icon.svg");
+    background-image: url("../img/stuff-icon-mobile.svg");
   }
 
   &--delivery::before {
-    background-image: url("../img/delivery-icon.svg");
+    background-image: url("../img/delivery-icon-mobile.svg");
   }
 }
 
@@ -59,4 +68,83 @@
   display: inline-block;
 
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0 47px;
+    padding-top: 110px;
+    margin-bottom: 100px;
+
+    width: 674px;
+
+    text-align: left;
+
+    background-image: url("../img/cake1-tablet.png");
+    background-position: 273px 10px;
+  }
+
+  .promo__title {
+    width: 275px;
+
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
+
+  .promo__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    order: 1;
+
+    margin: 0;
+    width: auto;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .promo__item {
+    padding-left: 67px;
+
+    &::before {
+      top: -15px;
+
+      width: 55px;
+      height: 55px;
+    }
+
+    &--stuff {
+      width: 195px;
+
+      &::before {
+        background-image: url("../img/stuff-icon-tablet.svg");
+      }
+    }
+
+
+    &--delivery {
+      width: 220px;
+
+      &::before {
+        background-image: url("../img/delivery-icon-tablet.svg");
+      }
+    }
+  }
+
+  .promo__button {
+    margin-bottom: 145px;
+  }
 }

@@ -1,8 +1,5 @@
 .about-us {
-  margin: 0 auto;
-  padding: 0 20px;
   padding-top: 40px;
-  width: 280px;
 }
 
 .about-us__title {
@@ -11,6 +8,7 @@
   margin-bottom: 25px;
 
   text-align: center;
+  font-size: 24px;
 }
 
 .about-us__wrapper {
@@ -19,7 +17,9 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 280px;
 }
 
 .about-us__photo {
@@ -36,6 +36,8 @@
   @include block-subtitle;
 
   margin-bottom: 10px;
+
+  font-size: 22px;
 }
 
 .about-us__topic {
@@ -52,7 +54,10 @@
 }
 
 .about-us__quote {
-  display: inline-block;
+  display: block;
+
+  margin: 0 auto;
+  width: 280px;
 
   font-family: $other-font;
   font-size: 13px;

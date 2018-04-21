@@ -36,3 +36,10 @@
 .catalog-card__arrow {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-card__image {
+    width: auto;
+    height: auto;
+  }
+}
