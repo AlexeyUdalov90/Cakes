@@ -1,7 +1,4 @@
 .order-form {
-  margin: 0 auto;
-  padding: 8px 20px 25px;
-
   width: 240px;
 
   text-align: center;
@@ -28,8 +25,59 @@
 .order-form__input {
   margin: 0;
   margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
 }
 
 .order-form__button {
   padding: 17px 62px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 437px;
+  }
+
+  .order-form__title {
+    font-size: 18px;
+  }
+
+  .order-form__input {
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--fill,
+    &--decor {
+      width: 160px;
+    }
+
+    &--size {
+      width: 75px;
+    }
+  }
+
+  .order-form__button {
+    align-self: flex-end;
+    padding: 17px 32px;
+  }
 }

@@ -4,8 +4,6 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
-
-  box-sizing: border-box;
 }
 
 .decor-list__item {
@@ -48,4 +46,40 @@
   display: inline-block;
   padding: 17px 60px;
   margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .decor-list__item {
+    width: 196px;
+    height: 262px;
+    margin: 12px;
+
+    box-shadow: 0 7px 13px rgba(103, 12, 40, 0.05);
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(103, 12, 40, 0.14);
+    }
+  }
+
+  .decor-list__image {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 196px;
+    height: 160px;
+
+    box-shadow: none;
+
+    img {
+      width: 196px;
+      height: 160px;
+    }
+  }
+
+  .decor-list__price {
+    margin-bottom: 15px;
+  }
+
+  .decor-list__button {
+    display: none;
+  }
 }

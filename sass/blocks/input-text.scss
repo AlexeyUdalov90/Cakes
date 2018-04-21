@@ -4,8 +4,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  &:last-child {
-    margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
   }
 
   .input-text__label {
@@ -30,7 +30,7 @@
 
     &::placeholder {
       color: $font-color;
-      opacity: 1;
+      opacity: 0.5;
     }
   }
 }

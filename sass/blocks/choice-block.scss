@@ -1,9 +1,12 @@
 .choice-block {
+  position: relative;
   padding: 8px 20px 15px;
 
   width: 240px;
 
   background-color: #ffffff;
+
+  box-shadow: 0 5px 13px rgba(163, 6, 60, 0.1);
 }
 
 .choice-block__title {
@@ -22,11 +25,81 @@
 }
 
 .choice-block__slider {
+  // position: relative;
   width: 240px;
 
   overflow: hidden;
 
   input[type="radio"] {
     display: none;
+  }
+
+  &--decor {
+    margin-bottom: 40px;
+  }
+}
+
+.choice-block__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .choice-block {
+    padding: 30px 47px 36px;
+    width: auto;
+
+    &--flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  .choice-block--size {
+    .choice-block__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .choice-block__title {
+    width: 110px;
+
+    font-size: 18px;
+  }
+
+  .choice-block__number {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 36px;
+  }
+
+  .choice-block__slider {
+    margin: 0 auto;
+    width: 440px;
+
+    &--size {
+      width: auto;
+    }
+
+    &--decor {
+      margin-bottom: 20px;
+    }
+  }
+
+  .choice-block__toggle {
+    position: absolute;
+    top: 160px;
+
+    display: block;
+
+    &--prev {
+      left: 150px;
+    }
+
+    &--next {
+      right: 40px;
+    }
   }
 }
