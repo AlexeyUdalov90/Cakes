@@ -2,6 +2,7 @@
   position: relative;
 
   box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.05);
+  overflow: hidden;
 }
 
 .catalog-card__link {
@@ -41,5 +42,40 @@
   .catalog-card__image {
     width: auto;
     height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card__title {
+    font-size: 24px;
+  }
+
+  .catalog-card__amount {
+    font-size: 20px;
+  }
+
+  .catalog-card__text-block {
+    top: 35px;
+    left: 40px;
+  }
+
+  .catalog-card__arrow {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+
+    display: block;
+
+    fill: rgb(117, 117, 117);
+    transition: all 0.5s;
+  }
+
+  .catalog-card__link:hover,
+  .catalog-card__link:focus {
+    .catalog-card__arrow {
+      right: 40px;
+
+      fill: rgb(247, 131, 131);
+    }
   }
 }
