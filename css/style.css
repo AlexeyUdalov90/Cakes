@@ -336,7 +336,7 @@ img {
             align-items: flex-start;
     padding: 0 47px;
     padding-top: 110px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 674px;
     text-align: left;
     background-image: url("../img/cake1-tablet.png");
@@ -1102,6 +1102,9 @@ img {
   width: 240px;
   font-size: 12px; }
 
+.reviews__wrapper {
+  text-align: center; }
+
 .reviews__photo {
   width: 60px;
   height: 60px;
@@ -1114,11 +1117,58 @@ img {
   line-height: 24px; }
 
 .reviews__text {
-  text-align: center; }
+  margin: 0;
+  margin-top: 10px; }
 
 .reviews__link {
   font-style: italic;
   color: #f50049; }
+
+.reviews__toggle {
+  display: none; }
+
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+    margin-bottom: 60px;
+    background-image: url("../img/flags-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center -10px; }
+  .reviews__title {
+    margin-bottom: 20px;
+    font-size: 28px; }
+  .reviews__slider {
+    width: 440px; }
+  .reviews__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 440px;
+    padding: 0 20px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .reviews__wrapper {
+    width: 255px;
+    text-align: left; }
+  .reviews__photo {
+    margin-right: 25px;
+    width: 108px;
+    height: 108px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .reviews__name {
+    font-size: 16px;
+    line-height: 1.2; }
+  .reviews__toggle {
+    position: absolute;
+    top: 140px;
+    display: block; }
+    .reviews__toggle--prev {
+      left: 90px; }
+    .reviews__toggle--next {
+      right: 90px; } }
 
 .about-us {
   padding-top: 40px; }
