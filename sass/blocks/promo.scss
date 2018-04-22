@@ -2,10 +2,6 @@
   padding-top: 130px;
 
   text-align: center;
-
-  background-image: url("../img/cake1-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center -205px;
 }
 
 .promo__title {
@@ -86,7 +82,8 @@
     text-align: left;
 
     background-image: url("../img/cake1-tablet.png");
-    background-position: 273px 10px;
+    background-repeat: no-repeat;
+    background-position: right 10px;
   }
 
   .promo__title {
@@ -134,7 +131,6 @@
       }
     }
 
-
     &--delivery {
       width: 220px;
 
@@ -146,5 +142,28 @@
 
   .promo__button {
     margin-bottom: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 140px 20px 0;
+    margin-bottom: 200px;
+    width: 1220px;
+
+    background-image: none;
+  }
+
+  .promo__title {
+    margin-bottom: 25px;
+    width: 370px;
+
+    font-size: 78px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+
+  .promo__subtitle {
+    font-size: 40px;
   }
 }

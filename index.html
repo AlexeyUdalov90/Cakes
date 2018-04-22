@@ -61,6 +61,7 @@
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake1-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake1-tablet.jpg">
                 <img src="img/catalog-cake1-mobile.jpg" alt="Классический торт" width="280" height="120">
               </picture>
@@ -69,13 +70,16 @@
               <h3 class="catalog-card__title">Классические</h3>
               <span class="catalog-card__amount">24 вида</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake2-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake2-tablet.jpg">
                 <img src="img/catalog-cake2-mobile.jpg" alt="Мусовый торт" width="280" height="120">
               </picture>
@@ -84,13 +88,16 @@
               <h3 class="catalog-card__title">Мусовые</h3>
               <span class="catalog-card__amount">12 видов</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake3-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake3-tablet.jpg">
                 <img src="img/catalog-cake3-mobile.jpg" alt="Свадебный торт" width="280" height="120">
               </picture>
@@ -99,13 +106,16 @@
               <h3 class="catalog-card__title">Свадебные</h3>
               <span class="catalog-card__amount">20 видов</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake4-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake4-tablet.jpg">
                 <img src="img/catalog-cake4-mobile.jpg" alt="Мужской торт" width="280" height="120">
               </picture>
@@ -114,13 +124,16 @@
               <h3 class="catalog-card__title">Мужчинам</h3>
               <span class="catalog-card__amount">12 видов</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
         <li class="catalog-card catalog__item">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake5-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake5-tablet.jpg">
                 <img src="img/catalog-cake5-mobile.jpg" alt="Женский торт" width="280" height="120">
               </picture>
@@ -129,13 +142,16 @@
               <h3 class="catalog-card__title">Женщинам</h3>
               <span class="catalog-card__amount">16 видов</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
         <li class="catalog-card catalog__item catalog__item--big">
           <a href="#" class="catalog-card__link">
             <div class="catalog-card__image">
               <picture>
+                <source media="(min-width: 1260px)" srcset="img/catalog-cake6-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-cake6-tablet.jpg">
                 <img src="img/catalog-cake6-mobile.jpg" alt="Детский торт" width="280" height="120">
               </picture>
@@ -144,7 +160,9 @@
               <h3 class="catalog-card__title">Детские</h3>
               <span class="catalog-card__amount">18 видов</span>
             </div>
-            <span class="catalog-card__arrow"></span>
+            <svg class="catalog-card__arrow" width="23" height="17">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -317,7 +335,7 @@
         <div class="about-us__photo">
           <picture>
             <source media="(min-width: 768px)" srcset="img/photo-cook-tablet.jpg">
-            <img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155">
+            <img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" height="155">
           </picture>
         </div>
         <ul class="social-list social-list--about-us about-us__social">
@@ -454,7 +472,6 @@
           </li>
         </ul>
       </div>
-
     </section>
   </main>
 
@@ -508,23 +525,21 @@
           </a>
         </li>
       </ul>
-</div>
-      <div class="page-footer__copyright">
-        <span>&copy;</span> 2018 Cakes
-      </div>
-    <!-- </div> -->
+    </div>
+    <div class="page-footer__copyright">
+      <span>&copy;</span> 2018 Cakes
+    </div>
   </footer>
 
   <script>
     var navHead = document.querySelector('.page-header__nav');
     var navButton = navHead.querySelector('.main-nav__button');
-    var navList = navHead.querySelector('.main-nav__list--header');
+
     var list = document.querySelector('.size-list');
 
     navHead.classList.remove('main-nav--no-js');
 
     navButton.addEventListener('click', function () {
-      // navButton.classList.toggle('main-nav__button--active');
       navHead.classList.toggle('main-nav--show');
     });
 

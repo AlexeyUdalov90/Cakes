@@ -13,9 +13,25 @@ body {
   color: $font-color;
 
   background-color: $body-background;
+  background-image: url("../img/cake1-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center -160px;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-image: url("../img/cake1-desktop.png");
+    background-position: right 90px;
+  }
 }
