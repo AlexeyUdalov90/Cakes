@@ -288,18 +288,24 @@
     <section class="reviews content-wrapper page-main__reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider">
+        <button class="slider-toggle slider-toggle--prev reviews__toggle reviews__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
+        <button class="slider-toggle slider-toggle--next reviews__toggle reviews__toggle--next"><span class="visually-hidden">Следующий</span></button>
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="reviews__photo"><img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108"></div>
-            <span class="reviews__name">Мария</span>
-            <span class="reviews__work-and-age">юрист, 33 года</span>
-            <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+            <div class="reviews__wrapper">
+              <span class="reviews__name">Мария</span><br>
+              <span class="reviews__work-and-age">юрист, 33 года</span>
+              <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+            </div>
           </li>
           <li class="reviews__item">
             <div class="reviews__photo"><img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108"></div>
-            <span class="reviews__name">Мария</span>
-            <span class="reviews__work-and-age">юрист, 33 года</span>
-            <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+            <div class="reviews__wrapper">
+              <span class="reviews__name">Мария</span><br>
+              <span class="reviews__work-and-age">юрист, 33 года</span>
+              <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+            </div>
           </li>
         </ul>
       </div>
@@ -308,7 +314,12 @@
     <section class="about-us content-wrapper page-main__about-us">
       <h2 class="about-us__title">О нас</h2>
       <div class="about-us__wrapper">
-        <div class="about-us__photo"><img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155"></div>
+        <div class="about-us__photo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-cook-tablet.jpg">
+            <img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155">
+          </picture>
+        </div>
         <ul class="social-list social-list--about-us about-us__social">
           <li class="social-list__item">
             <a href="#" title="Instagram" class="social-list__link social-list__link--white social-list__link--instagram">
@@ -364,13 +375,15 @@
       </section>
 
       <section class="care content-wrapper">
-        <h2 class="care__title">Забота о клиентах</h2>
-        <h3 class="care__subtitle">Для нас важно</h3>
-        <p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+        <div class="care__wrapper">
+          <h2 class="care__title">Забота о клиентах</h2>
+          <h3 class="care__subtitle">Для нас важно</h3>
+          <p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+        </div>
       </section>
     </div>
 
-    <section class="manual">
+    <section class="manual content-wrapper">
       <div class="manual__wrapper">
         <h2 class="manual__title">Как заказать</h2>
         <ol class="manual__list">
@@ -391,11 +404,12 @@
     </section>
 
     <section class="contacts content-wrapper">
-      <div class="contacts__wrapper">
+
         <h2 class="contacts__title">Контакты</h2>
         <h3 class="contacts__subtitle">Остались вопросы?</h3>
-        <b class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</b>
+        <div class="contacts__wrapper">
         <form action="" method="post" class="contacts__form">
+          <span class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</span>
           <p class="input-text contacts__input input-text--question">
             <label for="name" class="visually-hidden"></label>
             <input type="text" name="name" id="name" class="input-text__field input-text__field--contacts" placeholder="Ваше имя">
@@ -406,45 +420,46 @@
           </p>
           <p class="input-text contacts__input input-text--question">
             <label for="question" class="visually-hidden"></label>
-            <textarea name="question" id="question" rows="6" class="input-text__field input-text__field--textarea input-text__field--contacts" placeholder="Ваш вопрос"></textarea>
+            <textarea name="question" id="question" rows="5" class="input-text__field input-text__field--textarea input-text__field--contacts" placeholder="Ваш вопрос"></textarea>
           </p>
           <button type="submit" class="button contacts__button">Отправить</button>
         </form>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            Или позвоните по телефону:<br><a href="tel:+79068999296" class="contacts__link">+7 906 899 92 96</a>
+          </li>
+          <li class="contacts__item">
+            Наша почта: <a href="mailto:bakerybypavel@mail.ru" class="contacts__link">bakerybypavel@mail.ru</a>
+          </li>
+          <li class="contacts__item">
+            Мы в соц. сетях:
+            <ul class="social-list social-list--contacts">
+              <li class="social-list__item">
+                <a href="#" title="Instagram" class="social-list__link social-list__link--white social-list__link--instagram">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg class="social-list__icon" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" title="Vkontakte" class="social-list__link social-list__link--white social-list__link--vkontakte">
+                  <span class="visually-hidden">Vkontakte</span>
+                  <svg class="social-list__icon" width="36" height="36">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          Или позвоните по телефону:<br><a href="tel:+79068999296" class="contacts__link">+7 906 899 92 96</a>
-        </li>
-        <li class="contacts__item">
-          Наша почта: <a href="mailto:bakerybypavel@mail.ru" class="contacts__link">bakerybypavel@mail.ru</a>
-        </li>
-        <li class="contacts__item">
-          Мы в соц. сетях:
-          <ul class="social-list social-list--contacts">
-            <li class="social-list__item">
-              <a href="#" title="Instagram" class="social-list__link social-list__link--white social-list__link--instagram">
-                <span class="visually-hidden">Instagram</span>
-                <svg class="social-list__icon" width="32" height="32">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" title="Vkontakte" class="social-list__link social-list__link--white social-list__link--vkontakte">
-                <span class="visually-hidden">Vkontakte</span>
-                <svg class="social-list__icon" width="36" height="36">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="content-wrapper page-footer__wrapper ">
+  <footer class="page-footer content-wrapper">
+    <div class="page-footer__wrapper">
       <nav class="main-nav page-footer__nav">
         <div class="main-nav__logo main-nav__logo--footer">
           <a class="main-nav__logo-link main-nav__logo-link--footer">Cakes</a>
@@ -493,11 +508,11 @@
           </a>
         </li>
       </ul>
-
+</div>
       <div class="page-footer__copyright">
-        &copy; 2018 Cakes
+        <span>&copy;</span> 2018 Cakes
       </div>
-    </div>
+    <!-- </div> -->
   </footer>
 
   <script>
@@ -509,8 +524,8 @@
     navHead.classList.remove('main-nav--no-js');
 
     navButton.addEventListener('click', function () {
-      navButton.classList.toggle('main-nav__button--active');
-      navList.classList.toggle('main-nav__list--show');
+      // navButton.classList.toggle('main-nav__button--active');
+      navHead.classList.toggle('main-nav--show');
     });
 
     // list.addEventListener('click', function (evt) {

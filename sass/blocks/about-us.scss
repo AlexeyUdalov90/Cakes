@@ -11,6 +11,14 @@
   font-size: 24px;
 }
 
+.about-us__subtitle {
+  @include block-subtitle;
+
+  margin-bottom: 10px;
+
+  font-size: 22px;
+}
+
 .about-us__wrapper {
   display: flex;
   flex-direction: row;
@@ -30,14 +38,6 @@
 
   border-radius: 50%;
   overflow: hidden;
-}
-
-.about-us__subtitle {
-  @include block-subtitle;
-
-  margin-bottom: 10px;
-
-  font-size: 22px;
 }
 
 .about-us__topic {
@@ -89,5 +89,82 @@
     background-image: url("../img/signature-mobile.png");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    position: relative;
+
+    padding: 0 47px;
+    width: 674px;
+  }
+
+  .about-us__title {
+    margin-bottom: 5px;
+
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .about-us__subtitle {
+    font-size: 26px;
+  }
+
+  .about-us__wrapper {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 335px;
+  }
+
+  .about-us__photo {
+    position: absolute;
+    top: 10px;
+    right: 47px;
+
+    margin: 0;
+    width: 311px;
+    height: 311px;
+
+    img {
+      width: 311px;
+      height: 311px;
+    }
+  }
+
+  .about-us__text-block {
+    margin-bottom: 20px;
+  }
+
+  .about-us__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .about-us__topic {
+    font-size: 15px;
+  }
+
+  .about-us__quote {
+    width: 375px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      margin-bottom: 10px;
+
+      font-size: 40px;
+    }
+
+    &::after {
+      width: 82px;
+      height: 40px;
+
+      background-image: url("../img/signature-tablet.png");
+    }
   }
 }

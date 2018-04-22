@@ -1,4 +1,6 @@
 .manual {
+  padding: 30px 20px 145px;
+
   color: #ffffff;
 
   background-color: $manual-background;
@@ -9,7 +11,6 @@
 
 .manual__wrapper {
   margin: 0 auto;
-  padding: 30px 20px 145px;
   width: 280px;
 }
 
@@ -56,4 +57,39 @@
 .manual__text {
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .manual {
+    padding: 50px 47px;
+    width: 674px;
+
+    background-image: url("../img/manual-tablet.jpg");
+    background-position: left bottom;
+  }
+
+  .manual__wrapper {
+    margin: 0;
+    margin-left: 280px;
+
+    width: 395px;
+  }
+
+  .manual__title {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .manual__item {
+    padding-left: 40px;
+    margin-bottom: 30px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .manual__text {
+    margin-top: 5px;
+  }
 }

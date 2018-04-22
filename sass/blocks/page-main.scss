@@ -5,3 +5,16 @@
   background-repeat: no-repeat;
   background-position: center 209%;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__features {
+    margin: 0 auto;
+    width: $tablet-width;
+    padding-bottom: 105px;
+
+    background-image: url("../img/fruts-tablet.png"), url("../img/cake2-tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px top, right bottom;
+    background-clip: border-box;
+  }
+}

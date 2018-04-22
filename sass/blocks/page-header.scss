@@ -3,8 +3,6 @@
   z-index: 1;
 
   width: 100%;
-
-  background-color: #ffffff;
 }
 
 .page-header__wrapper {
@@ -22,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    width: auto;
+  }
+
   .page-header__wrapper {
     display: flex;
     flex-direction: row;

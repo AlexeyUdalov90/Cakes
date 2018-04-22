@@ -22,12 +22,15 @@
 
 .contacts__text {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 7px;
+
+  text-align: left;
 }
 
 .contacts__form {
   margin-bottom: 25px;
-  width: 280px;
+  width: 100%;
 
   text-align: center;
 }
@@ -54,4 +57,37 @@
 
 .contacts__link {
   @include reset-link;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 45px 47px 110px;
+    width: 674px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .contacts__title {
+    margin-bottom: 5px;
+
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .contacts__subtitle {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+
+  .contacts__form {
+    margin-bottom: 0;
+    margin-right: 65px;
+    width: 345px;
+
+    text-align: left;
+  }
 }
