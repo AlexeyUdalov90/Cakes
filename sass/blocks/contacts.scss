@@ -22,6 +22,7 @@
 
 .contacts__text {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 7px;
 
   text-align: left;
@@ -86,9 +87,7 @@
     margin-bottom: 0;
     margin-right: 65px;
     width: 345px;
-  }
 
-  .contacts__form {
     text-align: left;
   }
 }

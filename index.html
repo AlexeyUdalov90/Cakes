@@ -458,8 +458,8 @@
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="content-wrapper page-footer__wrapper ">
+  <footer class="page-footer content-wrapper">
+    <div class="page-footer__wrapper">
       <nav class="main-nav page-footer__nav">
         <div class="main-nav__logo main-nav__logo--footer">
           <a class="main-nav__logo-link main-nav__logo-link--footer">Cakes</a>
@@ -508,11 +508,11 @@
           </a>
         </li>
       </ul>
-
+</div>
       <div class="page-footer__copyright">
-        &copy; 2018 Cakes
+        <span>&copy;</span> 2018 Cakes
       </div>
-    </div>
+    <!-- </div> -->
   </footer>
 
   <script>
@@ -524,8 +524,8 @@
     navHead.classList.remove('main-nav--no-js');
 
     navButton.addEventListener('click', function () {
-      navButton.classList.toggle('main-nav__button--active');
-      navList.classList.toggle('main-nav__list--show');
+      // navButton.classList.toggle('main-nav__button--active');
+      navHead.classList.toggle('main-nav--show');
     });
 
     // list.addEventListener('click', function (evt) {
