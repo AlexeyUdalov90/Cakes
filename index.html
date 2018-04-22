@@ -314,7 +314,12 @@
     <section class="about-us content-wrapper page-main__about-us">
       <h2 class="about-us__title">О нас</h2>
       <div class="about-us__wrapper">
-        <div class="about-us__photo"><img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155"></div>
+        <div class="about-us__photo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-cook-tablet.jpg">
+            <img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" heigth="155">
+          </picture>
+        </div>
         <ul class="social-list social-list--about-us about-us__social">
           <li class="social-list__item">
             <a href="#" title="Instagram" class="social-list__link social-list__link--white social-list__link--instagram">

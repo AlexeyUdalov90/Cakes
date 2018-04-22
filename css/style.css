@@ -1183,6 +1183,15 @@ img {
   text-align: center;
   font-size: 24px; }
 
+.about-us__subtitle {
+  padding: 0;
+  margin: 0;
+  font-family: "Intro Script", "Comic Sans MS", cursive;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px;
+  font-size: 22px; }
+
 .about-us__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1207,15 +1216,6 @@ img {
   height: 156px;
   border-radius: 50%;
   overflow: hidden; }
-
-.about-us__subtitle {
-  padding: 0;
-  margin: 0;
-  font-family: "Intro Script", "Comic Sans MS", cursive;
-  font-weight: 400;
-  color: #000000;
-  margin-bottom: 10px;
-  font-size: 22px; }
 
 .about-us__topic {
   display: inline-block;
@@ -1254,6 +1254,63 @@ img {
     background-image: url("../img/signature-mobile.png");
     background-repeat: no-repeat;
     background-position: center; }
+
+@media (min-width: 768px) {
+  .about-us {
+    position: relative;
+    padding: 0 47px;
+    width: 674px; }
+  .about-us__title {
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: left; }
+  .about-us__subtitle {
+    font-size: 26px; }
+  .about-us__wrapper {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 335px; }
+  .about-us__photo {
+    position: absolute;
+    top: 10px;
+    right: 47px;
+    margin: 0;
+    width: 311px;
+    height: 311px; }
+    .about-us__photo img {
+      width: 311px;
+      height: 311px; }
+  .about-us__text-block {
+    margin-bottom: 20px; }
+  .about-us__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .about-us__topic {
+    font-size: 15px; }
+  .about-us__quote {
+    width: 375px;
+    font-size: 14px;
+    line-height: 20px; }
+    .about-us__quote::before {
+      margin-bottom: 10px;
+      font-size: 40px; }
+    .about-us__quote::after {
+      width: 82px;
+      height: 40px;
+      background-image: url("../img/signature-tablet.png"); } }
 
 .social-list {
   margin: 0;
@@ -1342,6 +1399,11 @@ img {
     fill: #f50049; }
   .social-list__link--white:active .social-list__icon {
     opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .social-list--about-us .social-list__item {
+    margin: 0;
+    margin-right: 20px; } }
 
 .advantages {
   padding-top: 40px; }
