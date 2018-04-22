@@ -21,3 +21,14 @@
 .care__text {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .care {
+    padding: 0 47px;
+    width: auto;
+  }
+
+  .care__wrapper {
+    width: 325px;
+  }
+}
