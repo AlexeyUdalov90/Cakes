@@ -81,7 +81,6 @@ img {
       width: 728px; } }
   @media (min-width: 1260px) {
     .content-wrapper {
-      padding: 0;
       width: 1220px; } }
 
 .page-header {
@@ -496,7 +495,7 @@ img {
 @media (min-width: 1260px) {
   .promo {
     padding: 140px 20px 0;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     width: 1220px;
     background-image: none; }
   .promo__title {
@@ -565,7 +564,8 @@ img {
 
 @media (min-width: 1260px) {
   .catalog {
-    margin-bottom: 50px; }
+    padding-top: 100px;
+    margin-bottom: 0; }
   .catalog__title {
     margin-bottom: 40px;
     font-size: 40px; }
@@ -680,6 +680,8 @@ img {
       background-position: 20px 120px; } }
 
 @media (min-width: 1260px) {
+  .order {
+    padding-top: 90px; }
   .order__title {
     font-size: 40px; }
   .order__subtitle {
@@ -1446,6 +1448,36 @@ img {
       left: 90px; }
     .reviews__toggle--next {
       right: 90px; } }
+
+@media (min-width: 1260px) {
+  .reviews {
+    padding-top: 90px;
+    background-image: url("../img/flags-desktop.png"); }
+  .reviews__title {
+    margin-bottom: 40px;
+    font-size: 40px; }
+  .reviews__slider {
+    width: 720px; }
+  .reviews__item {
+    width: 720px; }
+  .reviews__photo {
+    margin-right: 50px;
+    width: 209px;
+    height: 209px; }
+  .reviews__wrapper {
+    width: 370px; }
+  .reviews__name {
+    font-size: 27px; }
+  .reviews__work-and-age {
+    font-size: 20px; }
+  .reviews__text {
+    font-size: 18px; }
+  .reviews__toggle {
+    top: 240px; }
+    .reviews__toggle--prev {
+      left: 180px; }
+    .reviews__toggle--next {
+      right: 180px; } }
 
 .about-us {
   padding-top: 40px; }
