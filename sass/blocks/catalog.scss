@@ -22,6 +22,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 17px;
+  }
+
   .catalog__title {
     margin-bottom: 33px;
 
@@ -34,8 +38,6 @@
     grid-template-columns: 288px 112px 288px;
     grid-template-rows: repeat(4, 184px);
     grid-gap: 20px;
-
-    margin-bottom: 17px;
   }
 
   .catalog__item {
@@ -55,6 +57,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 50px;
+  }
+
   .catalog__title {
     margin-bottom: 40px;
 

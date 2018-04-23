@@ -103,3 +103,42 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .choice-block {
+    padding: 30px 80px 55px;
+  }
+
+  .choice-block__title {
+    margin-right: 110px;
+
+    font-size: 27px;
+  }
+
+  .choice-block__number {
+    font-size: 64px;
+  }
+
+  .choice-block__slider {
+    margin-top: 20px;
+    width: 720px;
+
+    &--size {
+      margin-top: 0;
+      margin-bottom: 40px;
+      width: 880px;
+    }
+  }
+
+  .choice-block__toggle {
+    top: 240px;
+
+    &--prev {
+      left: 270px;
+    }
+
+    &--next {
+      right: 60px;
+    }
+  }
+}

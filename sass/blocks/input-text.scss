@@ -20,7 +20,6 @@
     width: 100%;
 
     font: inherit;
-    font-size: 14px;
     text-align: center;
 
     border: 1px solid $order-input-border;
@@ -57,6 +56,23 @@
     &::placeholder {
       color: $font-color;
       opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-text--order {
+    .input-text__label {
+      margin-bottom: 10px;
+      font-size: 27px;
+    }
+
+    .input-text__field {
+      padding: 10px;
+
+      text-align: left;
+
+      border-radius: 20px;
     }
   }
 }

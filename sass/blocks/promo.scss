@@ -166,4 +166,23 @@
   .promo__subtitle {
     font-size: 40px;
   }
+
+  .promo__list {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .promo__item {
+    &::before {
+      top: -10px;
+    }
+
+    &--stuff {
+      width: 200px;
+    }
+
+    &--delivery {
+      width: 280px;
+    }
+  }
 }
