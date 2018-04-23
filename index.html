@@ -196,24 +196,6 @@
                 <label for="chocolate" class="button filling-list__button">Выбрать</label>
               </div>
             </li>
-            <li class="filling-list__item">
-              <div class="filling-list__image">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/filling-tablet.jpg">
-                  <img src="img/filling-mobile.jpg" alt="Шоколадный ганаш" width="241" height="113">
-                </picture>
-              </div>
-              <div class="filling-list__wrapper">
-                <div class="filling-list__description">
-                  <b class="filling-list__name">Шоколадный ганаш</b>
-                  <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                </div>
-                <span class="filling-list__price">1000 руб/кг</span>
-                <input type="radio" name="filling" id="chocolate" value="chocolate" class="visually-hidden">
-                <label for="chocolate" class="button filling-list__button">Выбрать</label>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -229,7 +211,7 @@
                   <img src="img/size1-tablet.png" alt="Размер торта" width="77" height="77">
                 </picture>
               </div>
-              <span class="size-list__text">17-18 см<br>(1 кг – 6 персон)</span>
+              <span class="size-list__text">17-18 см<br>(1 кг - 6 персон)</span>
               <input type="radio" name="size" id="size1" value="1" class="visually-hidden">
               <label for="size1" class="button size-list__button">Выбрать</label>
             </li>
@@ -240,7 +222,7 @@
                   <img src="img/size2-tablet.png" alt="Размер торта" width="107" height="107">
                 </picture>
               </div>
-              <span class="size-list__text">23-24 см<br>(10–12 персон)</span>
+              <span class="size-list__text">23-24 см<br>(10-12 персон)</span>
               <input type="radio" name="size" id="size2" value="2" class="visually-hidden">
               <label for="size1" class="button size-list__button">Выбрать</label>
             </li>
@@ -251,7 +233,7 @@
                   <img src="img/size5-tablet.png" alt="Размер торта" width="120" height="120">
                 </picture>
               </div>
-              <span class="size-list__text">Два яруса 25 и 20 см<br>(15–20 персон)</span>
+              <span class="size-list__text">Два яруса 25 и 20 см<br>(15-20 персон)</span>
               <input type="radio" name="size" id="size3" value="3" class="visually-hidden">
               <label for="size1" class="button size-list__button">Выбрать</label>
             </li>
@@ -262,7 +244,7 @@
                   <img src="img/size8-tablet.png" alt="Размер торта" width="140" height="140">
                 </picture>
               </div>
-              <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25–30 персон)</span>
+              <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25-30 персон)</span>
               <input type="radio" name="size" id="size4" value="4" class="visually-hidden">
               <label for="size1" class="button size-list__button">Выбрать</label>
             </li>
@@ -334,19 +316,33 @@
         <button class="slider-toggle slider-toggle--next reviews__toggle reviews__toggle--next"><span class="visually-hidden">Следующий</span></button>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <div class="reviews__photo"><img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108"></div>
+            <div class="reviews__photo">
+              <picture>
+                <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
+                <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
+              </picture>
+            </div>
             <div class="reviews__wrapper">
               <span class="reviews__name">Мария</span><br>
               <span class="reviews__work-and-age">юрист, 33 года</span>
-              <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+              <p class="reviews__text">
+                Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
+              </p>
             </div>
           </li>
           <li class="reviews__item">
-            <div class="reviews__photo"><img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108"></div>
+            <div class="reviews__photo">
+              <picture>
+                <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
+                <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
+              </picture>
+            </div>
             <div class="reviews__wrapper">
               <span class="reviews__name">Мария</span><br>
               <span class="reviews__work-and-age">юрист, 33 года</span>
-              <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+              <p class="reviews__text">
+                Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
+              </p>
             </div>
           </li>
         </ul>
@@ -391,13 +387,17 @@
         <div class="about-us__text-block">
           <h3 class="about-us__subtitle">О кондитере</h3>
           <b class="about-us__topic">Кондитер – как призвание</b>
-          <p class="about-us__text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.</p>
-          <p class="about-us__text">С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+          <p class="about-us__text">
+            Павел - профессиональный повар в различных гастронамических областях, но однажды его сердце покорило кондитерское искусство.
+          </p>
+          <p class="about-us__text">
+            С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
+          </p>
           <b class="about-us__topic">Принцип – натуральные ингредиенты</b>
           <p class="about-us__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
         </div>
       </div>
-      <q class="about-us__quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</q>
+      <q class="about-us__quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингридиенты превращаются в божественное блюдо.</q>
     </section>
 
     <div class="page-main__features">
@@ -411,7 +411,7 @@
           </li>
           <li class="advantages__item advantages__item--fresh">
             <b class="advantages__topic">Свежий торт в день торжества</b>
-            <p class="advantages__text">Торты изготавливаются в течение суток до отправки</p>
+            <p class="advantages__text">Торты изготавливаются в течении суток до отправки</p>
           </li>
         </ul>
       </section>
@@ -420,7 +420,7 @@
         <div class="care__wrapper">
           <h2 class="care__title">Забота о клиентах</h2>
           <h3 class="care__subtitle">Для нас важно</h3>
-          <p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+          <p class="care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
         </div>
       </section>
     </div>
@@ -431,7 +431,7 @@
         <ol class="manual__list">
           <li class="manual__item">
             <b class="manual__topic">Срок заказа</b>
-            <p class="manual__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+            <p class="manual__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
           </li>
           <li class="manual__item">
             <b class="manual__topic">Доставка по городу</b>
@@ -439,7 +439,7 @@
           </li>
           <li class="manual__item">
             <b class="manual__topic">Доставка за городом</b>
-            <p class="manual__text">Доставка за пределами города рассчитывается индивидуально.</p>
+            <p class="manual__text">Доставка за пределами города рассчитывается индивидуально.</p>
           </li>
         </ol>
       </div>
@@ -450,7 +450,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <h3 class="contacts__subtitle">Остались вопросы?</h3>
         <div class="contacts__wrapper">
-        <form action="" method="post" class="contacts__form">
+        <form action="#" method="post" class="contacts__form">
           <span class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</span>
           <p class="input-text contacts__input input-text--question">
             <label for="name" class="visually-hidden"></label>
@@ -468,7 +468,7 @@
         </form>
         <ul class="contacts__list">
           <li class="contacts__item">
-            Или позвоните по телефону:<br><a href="tel:+79068999296" class="contacts__link">+7 906 899 92 96</a>
+            Или позвоните по телефону:<br><a href="tel:+79068999296" class="contacts__link">+7 906 899 92 96</a>
           </li>
           <li class="contacts__item">
             Наша почта: <a href="mailto:bakerybypavel@mail.ru" class="contacts__link">bakerybypavel@mail.ru</a>

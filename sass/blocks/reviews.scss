@@ -137,3 +137,59 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 90px;
+
+    background-image: url("../img/flags-desktop.png");
+  }
+
+  .reviews__title {
+    margin-bottom: 40px;
+
+    font-size: 40px;
+  }
+
+  .reviews__slider {
+    width: 720px;
+  }
+
+  .reviews__item {
+    width: 720px;
+  }
+
+  .reviews__photo {
+    margin-right: 50px;
+    width: 209px;
+    height: 209px;
+  }
+
+  .reviews__wrapper {
+    width: 370px;
+  }
+
+  .reviews__name {
+    font-size: 27px;
+  }
+
+  .reviews__work-and-age {
+    font-size: 20px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+
+  .reviews__toggle {
+    top: 240px;
+
+    &--prev {
+      left: 180px;
+    }
+
+    &--next {
+      right: 180px;
+    }
+  }
+}
