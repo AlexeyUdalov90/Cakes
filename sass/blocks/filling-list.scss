@@ -71,11 +71,8 @@
   }
 
   .filling-list__wrapper {
-    width: 250px;
-  }
-
-  .filling-list__description {
     padding-top: 20px;
+    width: 250px;
   }
 
   .filling-list__name {
@@ -89,5 +86,40 @@
 
   .filling-list__button {
     padding: 17px 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filling-list__item {
+    padding: 20px;
+  }
+
+  .filling-list__image {
+    margin-right: 45px;
+    width: 343px;
+    height: 390px;
+  }
+
+  .filling-list__wrapper {
+    padding-top: 65px;
+    width: 290px;
+  }
+
+  .filling-list__name {
+    font-size: 20px;
+  }
+
+  .filling-list__text {
+    font-size: 18px;
+  }
+
+  .filling-list__price {
+    margin-bottom: 50px;
+
+    font-size: 22px;
+  }
+
+  .filling-list__button {
+    padding: 17px 61px;
   }
 }

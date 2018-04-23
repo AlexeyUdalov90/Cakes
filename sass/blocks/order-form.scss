@@ -26,6 +26,8 @@
   margin: 0;
   margin-bottom: 8px;
 
+  font-size: 14px;
+
   &:last-child {
     margin-bottom: 30px;
   }
@@ -79,5 +81,38 @@
   .order-form__button {
     align-self: flex-end;
     padding: 17px 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    margin-bottom: 15px;
+  }
+
+  .order-form__title {
+    margin-bottom: 20px;
+
+    font-size: 27px;
+  }
+
+  .order-form__wrapper {
+    width: 805px;
+  }
+
+  .order-form__input {
+    font-size: 18px;
+
+    &--fill,
+    &--decor {
+      width: 250px;
+    }
+
+    &--size {
+      width: 140px;
+    }
+  }
+
+  .order-form__button {
+    padding: 17px 63px;
   }
 }

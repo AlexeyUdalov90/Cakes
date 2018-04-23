@@ -21,6 +21,7 @@
 .size-list__image {
   position: relative;
   margin: auto 0;
+  margin-bottom: 40px;
 
   &::before {
     content: attr(data-weight);
@@ -36,8 +37,6 @@
 }
 
 .size-list__text {
-  margin-top: 40px;
-
   font-size: 14px;
   line-height: 20px;
 }
@@ -63,6 +62,7 @@
   .size-list__image {
     margin: 0;
     margin-top: auto;
+    margin-bottom: 5px;
     padding: 15px;
 
     box-sizing: border-box;
@@ -94,11 +94,38 @@
     }
   }
 
-  .size-list__text {
-    margin-top: 5px;
-  }
-
   .size-list__button {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .size-list__image {
+    margin-bottom: 20px;
+
+    &--one {
+      width: 140px;
+      height: 140px;
+    }
+
+    &--two {
+      width: 184px;
+      height: 184px;
+    }
+
+    &--five {
+      width: 203px;
+      height: 203px;
+    }
+
+    &--eight {
+      width: 230px;
+      height: 230px;
+    }
+  }
+
+  .size-list__text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

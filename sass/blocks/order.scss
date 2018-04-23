@@ -7,7 +7,7 @@
   margin: 0 auto;
   margin-bottom: 10px;
   width: 78.5%;
-  max-width: 355px;
+  max-width: 485px;
 
   text-align: center;
   font-size: 24px;
@@ -51,6 +51,30 @@
       background-image: url("../img/decor-tablet.png");
       background-repeat: no-repeat;
       background-position: 20px 120px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .order__title {
+    font-size: 40px;
+  }
+
+  .order__subtitle {
+    margin-bottom: 45px;
+
+    font-size: 35px;
+  }
+
+  .order__choice-block {
+    margin-bottom: 35px;
+
+    &--decor {
+      margin-bottom: 0;
+
+      background-image: url("../img/decor-desktop.png");
+      background-position: 10px 170px;
     }
   }
 }
