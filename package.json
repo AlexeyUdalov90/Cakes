@@ -4,7 +4,11 @@
   "description": "Cakes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -27,14 +31,8 @@
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
+    "stylelint": "^9.2.0",
     "stylelint-config-htmlacademy": "^0.1.1"
-  },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
   },
   "browserslist": [
     "last 2 versions",

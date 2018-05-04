@@ -177,78 +177,100 @@
         <div class="choice-block__slider">
           <button class="slider-toggle slider-toggle--prev choice-block__toggle choice-block__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
           <button class="slider-toggle slider-toggle--next choice-block__toggle choice-block__toggle--next"><span class="visually-hidden">Следующий</span></button>
-          <ul class="filling-list choice-block__list">
-            <li class="filling-list__item">
-              <div class="filling-list__image">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/filling-tablet.jpg">
-                  <img src="img/filling-mobile.jpg" alt="Шоколадный ганаш" width="241" height="113">
-                </picture>
-              </div>
-              <div class="filling-list__wrapper">
-                <div class="filling-list__description">
-                  <b class="filling-list__name">Шоколадный ганаш</b>
-                  <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+          <div class="choice-block__slider-wrapper">
+            <ul class="filling-list choice-block__list">
+              <li class="filling-list__item">
+                <div class="filling-list__image">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/filling-tablet.jpg">
+                    <img src="img/filling-mobile.jpg" alt="Шоколадный ганаш" width="241" height="113">
+                  </picture>
                 </div>
-                <span class="filling-list__price">1000 руб/кг</span>
-                <input type="radio" name="filling" id="chocolate" value="chocolate" class="visually-hidden">
-                <label for="chocolate" class="button filling-list__button">Выбрать</label>
-              </div>
-            </li>
-          </ul>
+                <div class="filling-list__wrapper">
+                  <div class="filling-list__description">
+                    <b class="filling-list__name">Шоколадный ганаш</b>
+                    <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  </div>
+                  <span class="filling-list__price">1000 руб/кг</span>
+                  <input type="radio" name="filling" id="chocolate" value="chocolate" class="visually-hidden">
+                  <label for="chocolate" class="button filling-list__button">Выбрать</label>
+                </div>
+              </li>
+              <li class="filling-list__item">
+                <div class="filling-list__image">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/filling-tablet.jpg">
+                    <img src="img/filling-mobile.jpg" alt="Шоколадный ганаш" width="241" height="113">
+                  </picture>
+                </div>
+                <div class="filling-list__wrapper">
+                  <div class="filling-list__description">
+                    <b class="filling-list__name">Шоколадный ганаш</b>
+                    <p class="filling-list__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  </div>
+                  <span class="filling-list__price">1000 руб/кг</span>
+                  <input type="radio" name="filling" id="chocolate2" value="chocolate" class="visually-hidden">
+                  <label for="chocolate2" class="button filling-list__button">Выбрать</label>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="choice-block choice-block--size order__choice-block">
         <h4 class="choice-block__title"><span class="choice-block__number">02</span>Размер</h4>
         <div class="choice-block__slider choice-block__slider--size">
-          <ul class="size-list choice-block__list">
-            <li class="size-list__item">
-              <div class="size-list__image size-list__image--one" data-weight="1 кг">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/size1-desktop.png">
-                  <img src="img/size1-tablet.png" alt="Размер торта" width="77" height="77">
-                </picture>
-              </div>
-              <span class="size-list__text">17-18 см<br>(1 кг - 6 персон)</span>
-              <input type="radio" name="size" id="size1" value="1" class="visually-hidden">
-              <label for="size1" class="button size-list__button">Выбрать</label>
-            </li>
-            <li class="size-list__item">
-              <div class="size-list__image size-list__image--two" data-weight="2 кг">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/size2-desktop.png">
-                  <img src="img/size2-tablet.png" alt="Размер торта" width="107" height="107">
-                </picture>
-              </div>
-              <span class="size-list__text">23-24 см<br>(10-12 персон)</span>
-              <input type="radio" name="size" id="size2" value="2" class="visually-hidden">
-              <label for="size1" class="button size-list__button">Выбрать</label>
-            </li>
-            <li class="size-list__item">
-              <div class="size-list__image size-list__image--five" data-weight="5 кг">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/size5-desktop.png">
-                  <img src="img/size5-tablet.png" alt="Размер торта" width="120" height="120">
-                </picture>
-              </div>
-              <span class="size-list__text">Два яруса 25 и 20 см<br>(15-20 персон)</span>
-              <input type="radio" name="size" id="size3" value="3" class="visually-hidden">
-              <label for="size1" class="button size-list__button">Выбрать</label>
-            </li>
-            <li class="size-list__item">
-              <div class="size-list__image size-list__image--eight" data-weight="8 кг">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/size8-tablet.png">
-                  <img src="img/size8-tablet.png" alt="Размер торта" width="140" height="140">
-                </picture>
-              </div>
-              <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25-30 персон)</span>
-              <input type="radio" name="size" id="size4" value="4" class="visually-hidden">
-              <label for="size1" class="button size-list__button">Выбрать</label>
-            </li>
-          </ul>
+          <div class="choice-block__slider-wrapper">
+            <ul class="size-list choice-block__list">
+              <li class="size-list__item">
+                <div class="size-list__image size-list__image--one" data-weight="1 кг">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/size1-desktop.png">
+                    <img src="img/size1-tablet.png" alt="Размер торта" width="77" height="77">
+                  </picture>
+                </div>
+                <span class="size-list__text">17-18 см<br>(1 кг - 6 персон)</span>
+                <input type="radio" name="size" id="size1" value="1" class="visually-hidden">
+                <label for="size1" class="button size-list__button">Выбрать</label>
+              </li>
+              <li class="size-list__item">
+                <div class="size-list__image size-list__image--two" data-weight="2 кг">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/size2-desktop.png">
+                    <img src="img/size2-tablet.png" alt="Размер торта" width="107" height="107">
+                  </picture>
+                </div>
+                <span class="size-list__text">23-24 см<br>(10-12 персон)</span>
+                <input type="radio" name="size" id="size2" value="2" class="visually-hidden">
+                <label for="size1" class="button size-list__button">Выбрать</label>
+              </li>
+              <li class="size-list__item">
+                <div class="size-list__image size-list__image--five" data-weight="5 кг">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/size5-desktop.png">
+                    <img src="img/size5-tablet.png" alt="Размер торта" width="120" height="120">
+                  </picture>
+                </div>
+                <span class="size-list__text">Два яруса 25 и 20 см<br>(15-20 персон)</span>
+                <input type="radio" name="size" id="size3" value="3" class="visually-hidden">
+                <label for="size1" class="button size-list__button">Выбрать</label>
+              </li>
+              <li class="size-list__item">
+                <div class="size-list__image size-list__image--eight" data-weight="8 кг">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/size8-tablet.png">
+                    <img src="img/size8-tablet.png" alt="Размер торта" width="140" height="140">
+                  </picture>
+                </div>
+                <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25-30 персон)</span>
+                <input type="radio" name="size" id="size4" value="4" class="visually-hidden">
+                <label for="size1" class="button size-list__button">Выбрать</label>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -257,34 +279,36 @@
         <div class="choice-block__slider choice-block__slider--decor">
           <button class="slider-toggle slider-toggle--prev choice-block__toggle choice-block__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
           <button class="slider-toggle slider-toggle--next choice-block__toggle choice-block__toggle--next"><span class="visually-hidden">Следующий</span></button>
-          <ul class="decor-list choice-block__list">
-            <li class="decor-list__item">
-              <div class="decor-list__image">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/decor1-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/decor1-tablet.jpg">
-                  <img src="img/decor1-mobile.jpg" alt="Ягодное ассорти" width="162" height="140">
-                </picture>
-              </div>
-              <span class="decor-list__name">Ягодное ассорти</span>
-              <span class="decor-list__price">700 руб/кг</span>
-              <input type="radio" name="decor" id="decor1" value="1" class="visually-hidden" checked>
-              <label for="decor1" class="button decor-list__button">Выбрать</label>
-            </li>
-            <li class="decor-list__item">
-              <div class="decor-list__image">
-                <picture>
-                  <source media="(min-width: 1260px)" srcset="img/decor2-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/decor2-tablet.jpg">
-                  <img src="img/decor2-mobile.jpg" alt="Маршмэллоу" width="160" height="140">
-                </picture>
-              </div>
-              <span class="decor-list__name">Маршмэллоу</span>
-              <span class="decor-list__price">600 руб/кг</span>
-              <input type="radio" name="decor" id="decor2" value="2" class="visually-hidden">
-              <label for="decor2" class="button decor-list__button">Выбрать</label>
-            </li>
-          </ul>
+          <div class="choice-block__slider-wrapper">
+            <ul class="decor-list choice-block__list">
+              <li class="decor-list__item">
+                <div class="decor-list__image">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/decor1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor1-tablet.jpg">
+                    <img src="img/decor1-mobile.jpg" alt="Ягодное ассорти" width="162" height="140">
+                  </picture>
+                </div>
+                <span class="decor-list__name">Ягодное ассорти</span>
+                <span class="decor-list__price">700 руб/кг</span>
+                <input type="radio" name="decor" id="decor1" value="1" class="visually-hidden" checked>
+                <label for="decor1" class="button decor-list__button">Выбрать</label>
+              </li>
+              <li class="decor-list__item">
+                <div class="decor-list__image">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/decor2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor2-tablet.jpg">
+                    <img src="img/decor2-mobile.jpg" alt="Маршмэллоу" width="160" height="140">
+                  </picture>
+                </div>
+                <span class="decor-list__name">Маршмэллоу</span>
+                <span class="decor-list__price">600 руб/кг</span>
+                <input type="radio" name="decor" id="decor2" value="2" class="visually-hidden">
+                <label for="decor2" class="button decor-list__button">Выбрать</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <form action="#" method="post" class="order-form order__form">
           <fieldset class="order-form__block">
@@ -309,43 +333,45 @@
       </div>
     </section>
 
-    <section class="reviews content-wrapper page-main__reviews">
+    <section class="reviews page-main__reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider">
         <button class="slider-toggle slider-toggle--prev reviews__toggle reviews__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
         <button class="slider-toggle slider-toggle--next reviews__toggle reviews__toggle--next"><span class="visually-hidden">Следующий</span></button>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <div class="reviews__photo">
-              <picture>
-                <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
-                <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
-              </picture>
-            </div>
-            <div class="reviews__wrapper">
-              <span class="reviews__name">Мария</span><br>
-              <span class="reviews__work-and-age">юрист, 33 года</span>
-              <p class="reviews__text">
-                Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
-              </p>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__photo">
-              <picture>
-                <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
-                <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
-              </picture>
-            </div>
-            <div class="reviews__wrapper">
-              <span class="reviews__name">Мария</span><br>
-              <span class="reviews__work-and-age">юрист, 33 года</span>
-              <p class="reviews__text">
-                Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="reviews__slider-wrapper">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__photo">
+                <picture>
+                  <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
+                  <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
+                </picture>
+              </div>
+              <div class="reviews__wrapper">
+                <span class="reviews__name">Мария</span><br>
+                <span class="reviews__work-and-age">юрист, 33 года</span>
+                <p class="reviews__text">
+                  Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
+                </p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__photo">
+                <picture>
+                  <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
+                  <img src="img/photo-review-tablet.jpg" alt="Фото клиента" width="109" height="108">
+                </picture>
+              </div>
+              <div class="reviews__wrapper">
+                <span class="reviews__name">Мария</span><br>
+                <span class="reviews__work-and-age">юрист, 33 года</span>
+                <p class="reviews__text">
+                  Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -354,6 +380,7 @@
       <div class="about-us__wrapper">
         <div class="about-us__photo">
           <picture>
+            <source media="(min-width: 1260px)" srcset="img/photo-cook-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/photo-cook-tablet.jpg">
             <img src="img/photo-cook-mobile.jpg" alt="Кондитер Павел" width="156" height="155">
           </picture>
@@ -425,7 +452,7 @@
       </section>
     </div>
 
-    <section class="manual content-wrapper">
+    <section class="manual">
       <div class="manual__wrapper">
         <h2 class="manual__title">Как заказать</h2>
         <ol class="manual__list">
@@ -499,7 +526,7 @@
     </section>
   </main>
 
-  <footer class="page-footer content-wrapper">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
       <nav class="main-nav page-footer__nav">
         <div class="main-nav__logo main-nav__logo--footer">

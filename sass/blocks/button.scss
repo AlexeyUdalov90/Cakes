@@ -8,6 +8,7 @@
   background-color: $button-background;
   border-radius: 25px;
   border: none;
+  transition: all 0.5s;
   cursor: pointer;
 
   &:hover,
