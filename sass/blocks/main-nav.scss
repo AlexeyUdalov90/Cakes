@@ -212,6 +212,12 @@
 
       font-size: 28px;
     }
+
+    &--footer {
+      margin-right: 140px;
+
+      font-size: 28px;
+    }
   }
 
   .main-nav__button {
@@ -252,6 +258,17 @@
 
     .main-nav__item:not(:first-child) .main-nav__link {
       box-shadow: none;
+    }
+  }
+
+  .main-nav__list--footer {
+    width: 880px;
+
+    font-size: 16px;
+
+    .main-nav__item {
+      margin-top: 15px;
+      margin-right: 50px;
     }
   }
 }

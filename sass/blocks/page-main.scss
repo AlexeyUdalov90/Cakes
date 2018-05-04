@@ -18,3 +18,13 @@
     background-clip: border-box;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__features {
+    margin: 0;
+    padding-bottom: 250px;
+    width: auto;
+
+    background-image: url("../img/fruts-desktop.png"), url("../img/cake2-desktop.png");
+  }
+}

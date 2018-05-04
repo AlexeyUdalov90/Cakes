@@ -49,7 +49,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  .social-list__item {
+  .social-list__item:not(:nth-child(2n)) {
     margin-right: 18px;
   }
 
@@ -91,6 +91,18 @@
     .social-list__item {
       margin: 0;
       margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list--contacts {
+    margin-top: 30px;
+  }
+
+  .social-list--footer {
+    .social-list__icon {
+      fill: $font-color;
     }
   }
 }

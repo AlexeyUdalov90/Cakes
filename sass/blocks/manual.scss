@@ -1,17 +1,17 @@
 .manual {
-  padding: 30px 20px 145px;
-
   color: #ffffff;
 
   background-color: $manual-background;
-  background-image: url("../img/manual-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
 }
 
 .manual__wrapper {
   margin: 0 auto;
+  padding: 30px 20px 145px;
   width: 280px;
+
+  background-image: url("../img/manual-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .manual__title {
@@ -60,7 +60,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .manual {
+  .manual__wrapper {
+    margin: 0 auto;
+
     padding: 50px 47px;
     width: 674px;
 
@@ -68,16 +70,14 @@
     background-position: left bottom;
   }
 
-  .manual__wrapper {
-    margin: 0;
-    margin-left: 280px;
-
-    width: 395px;
-  }
-
   .manual__title {
+    margin-left: 283px;
     font-size: 28px;
     text-align: left;
+  }
+
+  .manual__list {
+    margin-left: 283px;
   }
 
   .manual__item {
@@ -91,5 +91,44 @@
 
   .manual__text {
     margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manual {
+    overflow: hidden;
+  }
+
+  .manual__wrapper {
+    padding: 120px 0 160px;
+    width: 100%;
+    max-width: 1366px;
+
+    background-image: url("../img/manual-desktop.jpg");
+  }
+
+  .manual__title {
+    margin-left: 60%;
+    font-size: 40px;
+  }
+
+  .manual__list {
+    margin-left: 60%;
+    width: 485px;
+  }
+
+  .manual__item {
+    padding-left: 45px;
+
+    font-size: 20px;
+
+    &::before {
+      top: -20px;
+      font-size: 64px;
+    }
+  }
+
+  .manual__topic {
+    font-size: 20px;
   }
 }

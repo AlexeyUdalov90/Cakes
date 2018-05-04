@@ -96,6 +96,7 @@
   .about-us {
     position: relative;
 
+    margin-bottom: 40px;
     padding: 0 47px;
     width: 674px;
   }
@@ -160,6 +161,71 @@
       height: 40px;
 
       background-image: url("../img/signature-tablet.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0;
+    padding-top: 100px;
+    width: 1220px;
+  }
+
+  .about-us__title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+
+  .about-us__wrapper {
+    margin-bottom: 180px;
+    width: 560px;
+  }
+
+  .about-us__subtitle {
+    margin-bottom: 5px;
+    font-size: 35px;
+  }
+
+  .about-us__topic {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .about-us__text {
+    font-size: 18px;
+  }
+
+  .about-us__text + .about-us__topic {
+    margin-top: 20px;
+  }
+
+  .about-us__photo {
+    top: 80px;
+    right: 80px;
+
+    width: 510px;
+    height: 510px;
+  }
+
+  .about-us__quote {
+    width: 670px;
+
+    font-size: 25px;
+    line-height: 38px;
+
+    &::before {
+      font-size: 70px;
+    }
+
+    &::after {
+      width: 149px;
+      height: 73px;
+
+      background-image: url("../img/signature-desktop.png");
     }
   }
 }

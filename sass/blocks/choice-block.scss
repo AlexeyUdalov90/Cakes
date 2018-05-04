@@ -1,5 +1,5 @@
 .choice-block {
-  position: relative;
+  // position: relative;
   padding: 8px 20px 15px;
 
   width: 240px;
@@ -28,7 +28,7 @@
   // position: relative;
   width: 240px;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   input[type="radio"] {
     display: none;
@@ -37,6 +37,12 @@
   &--decor {
     margin-bottom: 40px;
   }
+}
+
+.choice-block__slider-wrapper {
+  width: 100%;
+
+  overflow: hidden;
 }
 
 .choice-block__toggle {
@@ -76,6 +82,8 @@
   }
 
   .choice-block__slider {
+    position: relative;
+
     margin: 0 auto;
     width: 440px;
 
@@ -90,16 +98,18 @@
 
   .choice-block__toggle {
     position: absolute;
-    top: 160px;
+    top: 50%;
 
     display: block;
 
+    transform: translateY(-50%);
+
     &--prev {
-      left: 150px;
+      left: -55px;
     }
 
     &--next {
-      right: 40px;
+      right: -55px;
     }
   }
 }
@@ -127,18 +137,6 @@
       margin-top: 0;
       margin-bottom: 40px;
       width: 880px;
-    }
-  }
-
-  .choice-block__toggle {
-    top: 240px;
-
-    &--prev {
-      left: 270px;
-    }
-
-    &--next {
-      right: 60px;
     }
   }
 }

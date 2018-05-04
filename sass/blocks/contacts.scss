@@ -91,3 +91,45 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin: 0 auto;
+    padding: 75px 0 110px;
+    width: 1220px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+
+  .contacts__subtitle {
+    font-size: 35px;
+  }
+
+  .contacts__form {
+    margin-right: 80px;
+
+    width: 550px;
+  }
+
+  .contacts__text {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .contacts__input {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}

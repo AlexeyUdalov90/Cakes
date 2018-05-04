@@ -75,3 +75,28 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    color: $font-color;
+
+    background-color: $footer-background-desktop;
+  }
+
+  .page-footer__wrapper {
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+    width: 1220px;
+  }
+
+  .page-footer__nav {
+    margin-right: auto;
+  }
+
+  .page-footer__copyright {
+    width: 1220px;
+
+    border-top-color: rgba($font-color, 0.1);
+  }
+}

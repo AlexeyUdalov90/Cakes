@@ -1,6 +1,9 @@
 .care {
-  margin: 0 auto;
   padding-top: 40px;
+}
+
+.care__wrapper {
+  margin: 0 auto;
   width: 280px;
 }
 
@@ -23,12 +26,32 @@
 }
 
 @media (min-width: $tablet-width) {
-  .care {
-    padding: 0 47px;
-    width: auto;
+  .care__wrapper {
+    margin: 0;
+    padding-left: 27px;
+    width: 325px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .care__wrapper {
+    padding-left: 0;
+    width: 470px;
   }
 
-  .care__wrapper {
-    width: 325px;
+  .care__title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+
+  .care__subtitle {
+    margin-bottom: 5px;
+
+    font-size: 35px;
+  }
+
+  .care__text {
+    font-size: 20px;
   }
 }
