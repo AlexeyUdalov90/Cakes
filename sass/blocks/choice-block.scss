@@ -1,5 +1,4 @@
 .choice-block {
-  // position: relative;
   padding: 8px 20px 15px;
 
   width: 240px;
@@ -22,31 +21,6 @@
 
   font-size: 30px;
   line-height: 1;
-}
-
-.choice-block__slider {
-  // position: relative;
-  width: 240px;
-
-  // overflow: hidden;
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  &--decor {
-    margin-bottom: 40px;
-  }
-}
-
-.choice-block__slider-wrapper {
-  width: 100%;
-
-  overflow: hidden;
-}
-
-.choice-block__toggle {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,38 +54,6 @@
 
     font-size: 36px;
   }
-
-  .choice-block__slider {
-    position: relative;
-
-    margin: 0 auto;
-    width: 440px;
-
-    &--size {
-      width: auto;
-    }
-
-    &--decor {
-      margin-bottom: 20px;
-    }
-  }
-
-  .choice-block__toggle {
-    position: absolute;
-    top: 50%;
-
-    display: block;
-
-    transform: translateY(-50%);
-
-    &--prev {
-      left: -55px;
-    }
-
-    &--next {
-      right: -55px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,16 +69,5 @@
 
   .choice-block__number {
     font-size: 64px;
-  }
-
-  .choice-block__slider {
-    margin-top: 20px;
-    width: 720px;
-
-    &--size {
-      margin-top: 0;
-      margin-bottom: 40px;
-      width: 880px;
-    }
   }
 }

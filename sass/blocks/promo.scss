@@ -102,12 +102,12 @@
   .promo__list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     order: 1;
 
     margin: 0;
-    width: auto;
+    width: 485px;
 
     font-size: 14px;
     line-height: 18px;
@@ -168,6 +168,8 @@
   }
 
   .promo__list {
+    width: 520px;
+
     font-size: 18px;
     line-height: 1.2;
   }
