@@ -11,19 +11,8 @@
   font-size: 24px;
 }
 
-.reviews__slider-wrapper {
-  margin: 0 auto;
-  width: 280px;
-
-  overflow: hidden;
-}
-
 .reviews__list {
   @include reset-list;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 .reviews__item {
@@ -73,8 +62,6 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    // position: relative;
-
     margin-bottom: 80px;
 
     background-image: url("../img/flags-tablet.png");
@@ -86,17 +73,6 @@
     margin-bottom: 20px;
 
     font-size: 28px;
-  }
-
-  .reviews__slider {
-    position: relative;
-
-    margin: 0 auto;
-    width: $tablet-width;
-  }
-
-  .reviews__slider-wrapper {
-    width: 440px;
   }
 
   .reviews__item {
@@ -158,14 +134,6 @@
     margin-bottom: 40px;
 
     font-size: 40px;
-  }
-
-  .reviews__slider {
-    width: 1220px;
-  }
-
-  .reviews__slider-wrapper {
-    width: 660px;
   }
 
   .reviews__item {

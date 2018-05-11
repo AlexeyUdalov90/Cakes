@@ -174,12 +174,12 @@
 
       <div class="choice-block choice-block--flex order__choice-block">
         <h4 class="choice-block__title"><span class="choice-block__number">01</span>Выберите начинку</h4>
-        <div class="choice-block__slider">
-          <button class="slider-toggle slider-toggle--prev choice-block__toggle choice-block__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
-          <button class="slider-toggle slider-toggle--next choice-block__toggle choice-block__toggle--next"><span class="visually-hidden">Следующий</span></button>
-          <div class="choice-block__slider-wrapper">
-            <ul class="filling-list choice-block__list">
-              <li class="filling-list__item">
+        <div class="slider slider--filling choice-block__slider">
+          <button class="slider__toggle slider__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
+          <button class="slider__toggle slider__toggle--next"><span class="visually-hidden">Следующий</span></button>
+          <div class="slider__wrapper choice-block__slider-wrapper">
+            <ul class="filling-list slider__list">
+              <li class="filling-list__item slider__item">
                 <div class="filling-list__image">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
@@ -194,10 +194,10 @@
                   </div>
                   <span class="filling-list__price">1000 руб/кг</span>
                   <input type="radio" name="filling" id="chocolate" value="chocolate" class="visually-hidden">
-                  <label for="chocolate" class="button filling-list__button">Выбрать</label>
+                  <label for="chocolate"><span class="button filling-list__button">Выбрать</span></label>
                 </div>
               </li>
-              <li class="filling-list__item">
+              <li class="filling-list__item slider__item">
                 <div class="filling-list__image">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/filling-desktop.jpg">
@@ -217,15 +217,16 @@
               </li>
             </ul>
           </div>
+          <span class="slider__amount slider__amount--filling"></span>
         </div>
       </div>
 
       <div class="choice-block choice-block--size order__choice-block">
         <h4 class="choice-block__title"><span class="choice-block__number">02</span>Размер</h4>
-        <div class="choice-block__slider choice-block__slider--size">
-          <div class="choice-block__slider-wrapper">
-            <ul class="size-list choice-block__list">
-              <li class="size-list__item">
+        <div class="slider slider--size choice-block__slider">
+          <div class="slider__wrapper">
+            <ul class="size-list slider__list">
+              <li class="size-list__item slider__item">
                 <div class="size-list__image size-list__image--one" data-weight="1 кг">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/size1-desktop.png">
@@ -234,9 +235,9 @@
                 </div>
                 <span class="size-list__text">17-18 см<br>(1 кг - 6 персон)</span>
                 <input type="radio" name="size" id="size1" value="1" class="visually-hidden">
-                <label for="size1" class="button size-list__button">Выбрать</label>
+                <label for="size1"><span class="button size-list__button">Выбрать</span></label>
               </li>
-              <li class="size-list__item">
+              <li class="size-list__item slider__item">
                 <div class="size-list__image size-list__image--two" data-weight="2 кг">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/size2-desktop.png">
@@ -245,9 +246,9 @@
                 </div>
                 <span class="size-list__text">23-24 см<br>(10-12 персон)</span>
                 <input type="radio" name="size" id="size2" value="2" class="visually-hidden">
-                <label for="size1" class="button size-list__button">Выбрать</label>
+                <label for="size2"><span class="button size-list__button">Выбрать</span></label>
               </li>
-              <li class="size-list__item">
+              <li class="size-list__item slider__item">
                 <div class="size-list__image size-list__image--five" data-weight="5 кг">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/size5-desktop.png">
@@ -256,9 +257,9 @@
                 </div>
                 <span class="size-list__text">Два яруса 25 и 20 см<br>(15-20 персон)</span>
                 <input type="radio" name="size" id="size3" value="3" class="visually-hidden">
-                <label for="size1" class="button size-list__button">Выбрать</label>
+                <label for="size3"><span class="button size-list__button">Выбрать</span></label>
               </li>
-              <li class="size-list__item">
+              <li class="size-list__item slider__item">
                 <div class="size-list__image size-list__image--eight" data-weight="8 кг">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/size8-tablet.png">
@@ -267,7 +268,7 @@
                 </div>
                 <span class="size-list__text">Три яруса 30, 25 и 18 см<br>(25-30 персон)</span>
                 <input type="radio" name="size" id="size4" value="4" class="visually-hidden">
-                <label for="size1" class="button size-list__button">Выбрать</label>
+                <label for="size4"><span class="button size-list__button">Выбрать</span></label>
               </li>
             </ul>
           </div>
@@ -276,12 +277,12 @@
 
       <div class="choice-block choice-block--flex order__choice-block order__choice-block--decor">
         <h4 class="choice-block__title"><span class="choice-block__number">03</span>Оформление</h4>
-        <div class="choice-block__slider choice-block__slider--decor">
-          <button class="slider-toggle slider-toggle--prev choice-block__toggle choice-block__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
-          <button class="slider-toggle slider-toggle--next choice-block__toggle choice-block__toggle--next"><span class="visually-hidden">Следующий</span></button>
-          <div class="choice-block__slider-wrapper">
-            <ul class="decor-list choice-block__list">
-              <li class="decor-list__item">
+        <div class="slider slider--decor choice-block__slider">
+          <button class="slider__toggle slider__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
+          <button class="slider__toggle slider__toggle--next"><span class="visually-hidden">Следующий</span></button>
+          <div class="slider__wrapper">
+            <ul class="decor-list slider__list">
+              <li class="decor-list__item slider__item">
                 <div class="decor-list__image">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/decor1-desktop.jpg">
@@ -292,9 +293,9 @@
                 <span class="decor-list__name">Ягодное ассорти</span>
                 <span class="decor-list__price">700 руб/кг</span>
                 <input type="radio" name="decor" id="decor1" value="1" class="visually-hidden" checked>
-                <label for="decor1" class="button decor-list__button">Выбрать</label>
+                <label for="decor1"><span class="button decor-list__button">Выбрать</span></label>
               </li>
-              <li class="decor-list__item">
+              <li class="decor-list__item slider__item">
                 <div class="decor-list__image">
                   <picture>
                     <source media="(min-width: 1260px)" srcset="img/decor2-desktop.jpg">
@@ -305,10 +306,24 @@
                 <span class="decor-list__name">Маршмэллоу</span>
                 <span class="decor-list__price">600 руб/кг</span>
                 <input type="radio" name="decor" id="decor2" value="2" class="visually-hidden">
-                <label for="decor2" class="button decor-list__button">Выбрать</label>
+                <label for="decor2"><span class="button decor-list__button">Выбрать</span></label>
+              </li>
+              <li class="decor-list__item slider__item">
+                <div class="decor-list__image">
+                  <picture>
+                    <source media="(min-width: 1260px)" srcset="img/decor2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor2-tablet.jpg">
+                    <img src="img/decor2-mobile.jpg" alt="Маршмэллоу" width="160" height="140">
+                  </picture>
+                </div>
+                <span class="decor-list__name">Маршмэллоу</span>
+                <span class="decor-list__price">600 руб/кг</span>
+                <input type="radio" name="decor" id="decor3" value="2" class="visually-hidden" hidden>
+                <label for="decor3"><span class="button decor-list__button">Выбрать</span></label>
               </li>
             </ul>
           </div>
+          <span class="slider__amount slider__amount--decor"></span>
         </div>
         <form action="#" method="post" class="order-form order__form">
           <fieldset class="order-form__block">
@@ -335,12 +350,12 @@
 
     <section class="reviews page-main__reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews__slider">
-        <button class="slider-toggle slider-toggle--prev reviews__toggle reviews__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
-        <button class="slider-toggle slider-toggle--next reviews__toggle reviews__toggle--next"><span class="visually-hidden">Следующий</span></button>
-        <div class="reviews__slider-wrapper">
-          <ul class="reviews__list">
-            <li class="reviews__item">
+      <div class="slider slider--reviews reviews__slider">
+        <button class="slider__toggle slider__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
+        <button class="slider__toggle slider__toggle--next"><span class="visually-hidden">Следующий</span></button>
+        <div class="slider__wrapper">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
               <div class="reviews__photo">
                 <picture>
                   <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
@@ -355,7 +370,7 @@
                 </p>
               </div>
             </li>
-            <li class="reviews__item">
+            <li class="reviews__item slider__item">
               <div class="reviews__photo">
                 <picture>
                   <source media="(min-width: 1260px)" srcset="img/photo-review-desktop.jpg">
@@ -372,6 +387,7 @@
             </li>
           </ul>
         </div>
+        <span class="slider__amount slider__amount--reviews"></span>
       </div>
     </section>
 
@@ -586,21 +602,29 @@
     var navHead = document.querySelector('.page-header__nav');
     var navButton = navHead.querySelector('.main-nav__button');
 
-    var list = document.querySelector('.size-list');
-
     navHead.classList.remove('main-nav--no-js');
 
     navButton.addEventListener('click', function () {
       navHead.classList.toggle('main-nav--show');
     });
 
-    // list.addEventListener('click', function (evt) {
-    //   if (evt.target.className === 'size-list__image') {
-    //     var parent = evt.target.parentElement;
-    //     var radio = parent.querySelector('input[type="radio"]');
-    //     radio.checked = true;
-    //   }
-    // });
+    var sizeList = document.querySelector('.size-list');
+    var currentSize = null;
+
+    sizeList.addEventListener('click', function (evt) {
+
+      if (!evt.target.closest('.size-list__image')) return;
+
+      if (currentSize) {
+        currentSize.classList.remove('size-list__item--active');
+      };
+
+      currentSize = evt.target.parentElement;
+      currentSize.classList.add('size-list__item--active');
+      var radio = currentSize.querySelector('input[type="radio"]');
+      radio.checked = true;
+    });
   </script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

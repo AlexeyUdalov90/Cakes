@@ -1,10 +1,5 @@
 .filling-list {
   @include reset-list;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
 }
 
 .filling-list__item {
@@ -46,6 +41,8 @@
 
 .filling-list__button {
   display: inline-block;
+  vertical-align: top;
+
   padding: 17px 60px;
   margin-bottom: 10px;
 }
@@ -56,7 +53,7 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    padding: 20px 10px;
+    padding: 20px 0;
 
     text-align: left;
   }
@@ -72,7 +69,8 @@
 
   .filling-list__wrapper {
     padding-top: 20px;
-    width: 250px;
+    padding-right: 10px;
+    width: 200px;
   }
 
   .filling-list__name {
@@ -91,7 +89,7 @@
 
 @media (min-width: $desktop-width) {
   .filling-list__item {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .filling-list__image {
@@ -102,7 +100,7 @@
 
   .filling-list__wrapper {
     padding-top: 65px;
-    width: 290px;
+    width: 322px;
   }
 
   .filling-list__name {
