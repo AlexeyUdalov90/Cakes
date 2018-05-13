@@ -29,22 +29,26 @@
 
     block.ontouchstart = function (evt) {
       if (!evt.target.closest('.slider__list')) return;
-      evt.preventDefault();
-      var startCoord = evt.changedTouches[0].clientX;
-      var moveCoord;
+      var startCoordX = evt.changedTouches[0].clientX;
+      var moveCoordX;
 
       block.ontouchmove = function (evt) {
-        moveCoord = evt.changedTouches[0].clientX;
-      };
+        moveCoordX = evt.changedTouches[0].clientX;
+      }
 
       block.ontouchend = function (evt) {
-        evt.preventDefault();
-        if (startCoord > moveCoord) {
-          self._pos = Math.min(self._pos + self._amount, self._slides.length - self._amount);
-        } else if (startCoord < moveCoord) {
-          self._pos = Math.max(self._pos - self._amount, 0);
-        }
-        self._setTransform();
+        var MIN_DISTANCE_MOVE = 30;
+        var distanceMove = startCoordX - moveCoordX;
+
+        if (distanceMove < 0) distanceMove = -distanceMove;
+        if (distanceMove > MIN_DISTANCE_MOVE) {
+          if (startCoordX > moveCoordX) {
+            self._pos = Math.min(self._pos + self._amount, self._slides.length - self._amount);
+          } else if (startCoordX < moveCoordX) {
+            self._pos = Math.max(self._pos - self._amount, 0);
+          }
+          self._setTransform();
+        };
       };
     };
   };
@@ -60,13 +64,13 @@
 
   Slider.prototype._setTransform = function() {
     var slideWidth = this._slides[0].offsetWidth + parseFloat(this._slideStyle.marginLeft) + parseFloat(this._slideStyle.marginRight);
-    var maxTranslate = this._list.scrollWidth - slideWidth;
+    var maxLeft = this._list.scrollWidth - slideWidth;
 
-    if (maxTranslate < this._pos * slideWidth) {
-      this._list.style.transform = 'translateX(' + (-maxTranslate) + 'px)';
+    if (maxLeft < this._pos * slideWidth) {
+      this._list.style.left = -maxLeft + 'px';
       this._setAmount(this._sliderAmount, this._pos - this._amount, this._slides.length);
     } else {
-      this._list.style.transform = 'translateX(' + (-this._pos * slideWidth) + 'px)';
+      this._list.style.left = -this._pos * slideWidth + 'px';
       this._setAmount(this._sliderAmount, this._pos + this._amount, this._slides.length);
     }
   };
