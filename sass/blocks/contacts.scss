@@ -1,12 +1,13 @@
 .contacts {
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   width: 280px;
 }
 
 .contacts__title {
   @include block-title;
+
+  margin-bottom: 10px;
 
   text-align: center;
   font-size: 24px;
@@ -61,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 45px 47px 110px;
+    padding: 25px 47px 110px;
     width: 674px;
   }
 
@@ -95,7 +96,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     margin: 0 auto;
-    padding: 75px 0 110px;
+    padding: 55px 0 110px;
     width: 1220px;
   }
 

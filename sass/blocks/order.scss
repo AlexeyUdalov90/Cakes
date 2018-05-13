@@ -1,5 +1,5 @@
 .order {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .order__title {
@@ -18,7 +18,7 @@
   margin-bottom: 15px;
 
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .order__choice-block {
@@ -55,10 +55,9 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .order {
-    padding-top: 90px;
+    padding-top: 35px;
   }
 
   .order__title {

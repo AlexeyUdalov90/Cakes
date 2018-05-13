@@ -43,6 +43,14 @@
     width: auto;
     height: auto;
   }
+
+  .catalog-card__title {
+    font-size: 18px;
+  }
+
+  .catalog-card__amount {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {

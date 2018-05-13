@@ -19,8 +19,8 @@
   }
 
   .social-list__link {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -67,6 +67,7 @@
 .social-list__link--white {
   border-radius: 50%;
   background-color: #ffffff;
+  transition: box-shadow 0.5s;
 
   &:hover,
   &:focus {

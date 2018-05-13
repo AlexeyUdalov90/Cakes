@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .about-us__title {
@@ -60,7 +60,8 @@
   width: 280px;
 
   font-family: $other-font;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 700;
   font-style: italic;
   text-align: center;
@@ -98,6 +99,7 @@
 
     margin-bottom: 40px;
     padding: 0 47px;
+    padding-top: 40px;
     width: 674px;
   }
 
@@ -141,14 +143,14 @@
   }
 
   .about-us__topic {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .about-us__quote {
-    width: 375px;
+    width: 400px;
 
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       margin-bottom: 10px;

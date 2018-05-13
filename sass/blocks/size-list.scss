@@ -9,7 +9,8 @@
   align-items: center;
   flex-shrink: 0;
 
-  width: 240px;
+  padding: 10px;
+  width: 220px;
 
   text-align: center;
 }
@@ -17,7 +18,7 @@
 .size-list__image {
   position: relative;
   margin: auto 0;
-  margin-bottom: 40px;
+  // margin-bottom: 20px;
 
   // &::after {
   //   content: "";
@@ -47,6 +48,11 @@
 }
 
 .size-list__text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
   font-size: 14px;
   line-height: 20px;
 }
@@ -55,8 +61,6 @@
   display: inline-block;
   vertical-align: top;
 
-  margin-top: 50px;
-  margin-bottom: 10px;
   padding: 17px 60px;
 }
 
@@ -66,6 +70,7 @@
   }
 
   .size-list__item {
+    padding: 0;
     width: auto;
     min-width: 120px;
 
@@ -112,6 +117,10 @@
     &:hover {
       box-shadow: 0 6px 16px rgba(103, 12, 40, 0.14);
     }
+  }
+
+  .size-list__text {
+    margin-top: 0;
   }
 
   .size-list__button {

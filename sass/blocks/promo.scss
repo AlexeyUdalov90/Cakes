@@ -1,4 +1,5 @@
 .promo {
+  margin-bottom: 20px;
   padding-top: 130px;
 
   text-align: center;
@@ -16,7 +17,7 @@
 
   margin-bottom: 15px;
 
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .promo__list {
@@ -31,7 +32,7 @@
 .promo__item {
   position: relative;
 
-  padding-left: 42px;
+  padding-left: 55px;
   margin-bottom: 30px;
 
   box-sizing: border-box;
@@ -39,11 +40,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -10px;
     left: 0;
 
-    width: 33px;
-    height: 33px;
+    width: 50px;
+    height: 50px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -75,7 +76,6 @@
 
     padding: 0 47px;
     padding-top: 110px;
-    margin-bottom: 50px;
 
     width: 674px;
 
@@ -107,7 +107,7 @@
     order: 1;
 
     margin: 0;
-    width: 485px;
+    width: 440px;
 
     font-size: 14px;
     line-height: 18px;
@@ -148,7 +148,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding: 140px 20px 0;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     width: 1220px;
 
     background-image: none;
