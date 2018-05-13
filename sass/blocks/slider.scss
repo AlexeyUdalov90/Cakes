@@ -46,15 +46,15 @@
   opacity: 0.7;
 
   &--filling {
-    bottom: 210px;
+    top: 133px;
   }
 
   &--decor {
-    bottom: 140px;
+    top: 220px;
   }
 
   &--reviews {
-    bottom: 0;
+    bottom: -15px;
     right: 0;
 
     color: $amount-reviews-color;
@@ -149,6 +149,7 @@
 
     &--filling,
     &--decor {
+      top: auto;
       bottom: 15px;
       right: -35px;
     }

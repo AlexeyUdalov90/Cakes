@@ -3,7 +3,7 @@
   font-weight: 700;
 
   &--header {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
   }
 
@@ -81,7 +81,6 @@
     display: block;
     padding: 15px 0 11px;
 
-    font-size: 12px;
     text-align: center;
     text-transform: uppercase;
 
@@ -149,21 +148,15 @@
 @media (min-width: $tablet-width) {
   .main-nav__logo {
     &--header {
-      font-size: 20px;
+      font-size: 22px;
     }
 
     &--footer {
-      margin-right: 20px;
+      margin-right: 40px;
       margin-bottom: 0;
 
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.2;
-    }
-  }
-
-  .main-nav__list--header {
-    .main-nav__link {
-      font-size: 14px;
     }
   }
 
@@ -202,12 +195,14 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    width: 560px;
+    width: 530px;
 
     .main-nav__item {
-      margin-right: 20px;
+      margin-right: 15px;
       margin-bottom: 0;
       margin-top: 5px;
+
+      text-align: center;
     }
   }
 }

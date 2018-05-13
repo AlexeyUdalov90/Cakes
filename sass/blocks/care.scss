@@ -26,6 +26,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .care__title {
+    font-size: 28px;
+  }
+
+  .care__subtitle {
+    margin-bottom: 5px;
+
+    font-size: 26px;
+  }
+
   .care__wrapper {
     margin: 0;
     padding-left: 27px;

@@ -16,22 +16,22 @@
         <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list main-nav__list--header">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Наши торты</a>
+            <a href="#catalog" class="main-nav__link">Наши торты</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Индивидуальный заказ</a>
+            <a href="#order" class="main-nav__link">Индивидуальный заказ</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Отзывы</a>
+            <a href="#reviews" class="main-nav__link">Отзывы</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О нас</a>
+            <a href="#about-us" class="main-nav__link">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Как заказать</a>
+            <a href="#manual" class="main-nav__link">Как заказать</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты</a>
+            <a href="#contacts" class="main-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +54,7 @@
       <a href="#" class="button promo__button">Выбрать торт</a>
     </section>
 
-    <section class="catalog content-wrapper page-main__catalog">
+    <section id="catalog" class="catalog content-wrapper page-main__catalog">
       <h2 class="catalog__title">Наши торты</h2>
       <ul class="catalog__list">
         <li class="catalog-card catalog__item catalog__item--big">
@@ -168,7 +168,7 @@
       </ul>
     </section>
 
-    <section class="order content-wrapper page-main__order">
+    <section id="order" class="order content-wrapper page-main__order">
       <h2 class="order__title">Индивидуальный заказ</h2>
       <h3 class="order__subtitle">Соберите торт в 3 шага</h3>
 
@@ -348,7 +348,7 @@
       </div>
     </section>
 
-    <section class="reviews page-main__reviews">
+    <section id="reviews" class="reviews page-main__reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="slider slider--reviews reviews__slider">
         <button class="slider__toggle slider__toggle--prev"><span class="visually-hidden">Предыдущий</span></button>
@@ -391,7 +391,7 @@
       </div>
     </section>
 
-    <section class="about-us content-wrapper page-main__about-us">
+    <section id="about-us" class="about-us content-wrapper page-main__about-us">
       <h2 class="about-us__title">О нас</h2>
       <div class="about-us__wrapper">
         <div class="about-us__photo">
@@ -405,7 +405,7 @@
           <li class="social-list__item">
             <a href="#" title="Instagram" class="social-list__link social-list__link--white social-list__link--instagram">
               <span class="visually-hidden">instagram</span>
-              <svg class="social-list__icon" width="18" height="18">
+              <svg class="social-list__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </a>
@@ -413,7 +413,7 @@
           <li class="social-list__item">
             <a href="#" title="Vkontakte" class="social-list__link social-list__link--white social-list__link--vkontakte">
               <span class="visually-hidden">vkontakte</span>
-              <svg class="social-list__icon" width="20" height="20">
+              <svg class="social-list__icon" width="25" height="25">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
@@ -421,7 +421,7 @@
           <li class="social-list__item">
             <a href="#" title="Twitter" class="social-list__link social-list__link--white social-list__link--twitter">
               <span class="visually-hidden">twitter</span>
-              <svg class="social-list__icon" width="19" height="16">
+              <svg class="social-list__icon" width="25" height="22">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
             </a>
@@ -447,16 +447,18 @@
       <section class="advantages">
         <h2 class="advantages__title">Наши преимущества</h2>
         <h3 class="advantages__subtitle">Почему нас выбирают?</h3>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--stuff">
-            <b class="advantages__topic">Без искусственных добавок</b>
-            <p class="advantages__text">Работаем  с натуральными ингредиентами и свежими продуктами</p>
-          </li>
-          <li class="advantages__item advantages__item--fresh">
-            <b class="advantages__topic">Свежий торт в день торжества</b>
-            <p class="advantages__text">Торты изготавливаются в течении суток до отправки</p>
-          </li>
-        </ul>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--stuff">
+              <b class="advantages__topic">Без искусственных добавок</b>
+              <p class="advantages__text">Работаем  с натуральными ингредиентами и свежими продуктами</p>
+            </li>
+            <li class="advantages__item advantages__item--fresh">
+              <b class="advantages__topic">Свежий торт в день торжества</b>
+              <p class="advantages__text">Торты изготавливаются в течении суток до отправки</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="care content-wrapper">
@@ -468,7 +470,7 @@
       </section>
     </div>
 
-    <section class="manual">
+    <section id="manual" class="manual">
       <div class="manual__wrapper">
         <h2 class="manual__title">Как заказать</h2>
         <ol class="manual__list">
@@ -488,11 +490,10 @@
       </div>
     </section>
 
-    <section class="contacts content-wrapper">
-
-        <h2 class="contacts__title">Контакты</h2>
-        <h3 class="contacts__subtitle">Остались вопросы?</h3>
-        <div class="contacts__wrapper">
+    <section id="contacts" class="contacts content-wrapper">
+      <h2 class="contacts__title">Контакты</h2>
+      <h3 class="contacts__subtitle">Остались вопросы?</h3>
+      <div class="contacts__wrapper">
         <form action="#" method="post" class="contacts__form">
           <span class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</span>
           <p class="input-text contacts__input input-text--question">
@@ -550,22 +551,22 @@
         </div>
         <ul class="main-nav__list main-nav__list--footer">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Наши торты</a>
+            <a href="#catalog" class="main-nav__link">Наши торты</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Индивидуальный заказ</a>
+            <a href="#order" class="main-nav__link">Индивидуальный заказ</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Отзывы</a>
+            <a href="#reviews" class="main-nav__link">Отзывы</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О нас</a>
+            <a href="#about-us" class="main-nav__link">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Как заказать</a>
+            <a href="#manual" class="main-nav__link">Как заказать</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты</a>
+            <a href="#contacts" class="main-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -599,15 +600,6 @@
   </footer>
 
   <script>
-    var navHead = document.querySelector('.page-header__nav');
-    var navButton = navHead.querySelector('.main-nav__button');
-
-    navHead.classList.remove('main-nav--no-js');
-
-    navButton.addEventListener('click', function () {
-      navHead.classList.toggle('main-nav--show');
-    });
-
     var sizeList = document.querySelector('.size-list');
     var currentSize = null;
 
@@ -625,6 +617,7 @@
       radio.checked = true;
     });
   </script>
+  <script src="js/nav.js"></script>
   <script src="js/slider.js"></script>
 </body>
 </html>
