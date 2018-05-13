@@ -7,11 +7,37 @@
 }
 
 .filling-list__image {
+  position: relative;
+
   margin-bottom: 15px;
   width: 240px;
   height: 113px;
 
   background-color: $filling-img-background;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+
+    width: 17px;
+    height: 8px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    border: 4px solid $choice-sticker-color;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    transition: all 0.8s;
+  }
+}
+
+.filling-list__radio:checked ~ .filling-list__image::before {
+  visibility: visible;
+  opacity: 1;
 }
 
 .filling-list__description {
