@@ -12,22 +12,23 @@
   var decorList = document.querySelector('.decor-list');
 
   var chooseRadio = function (e) {
-    for (var i = 0; i < e.path.length; i++) {
-      if (e.path[i].tagName === 'LI') {
-        var radio = e.path[i].querySelector('input[type="radio"]');
-        radio.checked = true;
-        switch (radio.name) {
-          case 'filling':
-            fieldFilling.value = fillings[radio.value];
-            break;
-          case 'size':
-            fieldSize.value = sizes[radio.value];
-            break;
-          case 'decor':
-            fieldDecor.value = decors[radio.value];
-            break;
-        }
-      }
+    var elem = e.target;
+    while (elem.tagName !== 'LI') {
+      elem = elem.parentElement;
+    }
+
+    var radio = elem.querySelector('input[type="radio"]');
+    radio.checked = true;
+    switch (radio.name) {
+      case 'filling':
+        fieldFilling.value = fillings[radio.value];
+        break;
+      case 'size':
+        fieldSize.value = sizes[radio.value];
+        break;
+      case 'decor':
+        fieldDecor.value = decors[radio.value];
+        break;
     }
   }
 
