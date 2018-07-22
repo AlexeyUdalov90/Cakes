@@ -646,6 +646,7 @@
     $('.js-decor-slider').slick({
       dots: false,
       infinite: false,
+      draggable: false,
       slidesToShow: 2,
       slidesToScroll: 2,
       prevArrow: $('.js-decor-prev'),
@@ -655,6 +656,7 @@
           breakpoint: 768,
           settings: {
             arrows: false,
+            draggable: true,
             slidesToShow: 1,
             slidesToScroll: 1
           }
@@ -665,7 +667,8 @@
     $('.js-decor-img-slider').slick({
       arrows: false,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      zIndex: 4
     });
 
     $('.js-decor-img-slider').on('touchmove', function(evt) {
