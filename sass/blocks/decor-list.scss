@@ -51,6 +51,12 @@
   }
 }
 
+.decor-list__image-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .decor-list__radio:checked ~ .decor-list__image::before {
   visibility: visible;
   opacity: 1;
