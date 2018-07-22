@@ -4,7 +4,7 @@
   var sliders = document.querySelectorAll('.slider');
 
   function Slider(block) {
-    var self = this;
+    self = this;
     var wrapper = block.querySelector('.slider__wrapper');
     this._list = block.querySelector('.slider__list');
     this._slides = block.querySelectorAll('.slider__item');
@@ -70,7 +70,7 @@
       this._list.style.left = -maxLeft + 'px';
       this._setAmount(this._sliderAmount, this._pos - this._amount, this._slides.length);
     } else {
-      this._list.style.left = -this._pos * slideWidth + 'px';
+      this._list.style.left = -this._pos * this._slideWidth + 'px';
       this._setAmount(this._sliderAmount, this._pos + this._amount, this._slides.length);
     }
   };

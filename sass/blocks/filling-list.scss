@@ -3,6 +3,7 @@
 }
 
 .filling-list__item {
+  width: 240px;
   text-align: center;
 }
 
@@ -80,6 +81,7 @@
     justify-content: flex-start;
 
     padding: 20px 0;
+    width: 440px;
 
     text-align: left;
   }
@@ -115,7 +117,7 @@
 
 @media (min-width: $desktop-width) {
   .filling-list__item {
-    padding: 20px 0;
+    width: 720px;
   }
 
   .filling-list__image {
