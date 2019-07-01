@@ -4,7 +4,7 @@
   var sliders = document.querySelectorAll('.slider');
 
   function Slider(block) {
-    self = this;
+    var self = this;
     var wrapper = block.querySelector('.slider__wrapper');
     this._list = block.querySelector('.slider__list');
     this._slides = block.querySelectorAll('.slider__item');
@@ -34,13 +34,15 @@
 
       block.ontouchmove = function (evt) {
         moveCoordX = evt.changedTouches[0].clientX;
-      }
+      };
 
-      block.ontouchend = function (evt) {
+      block.ontouchend = function () {
         var MIN_DISTANCE_MOVE = 30;
         var distanceMove = startCoordX - moveCoordX;
 
-        if (distanceMove < 0) distanceMove = -distanceMove;
+        if (distanceMove < 0) {
+          distanceMove = -distanceMove;
+        }
         if (distanceMove > MIN_DISTANCE_MOVE) {
           if (startCoordX > moveCoordX) {
             self._pos = Math.min(self._pos + self._amount, self._slides.length - self._amount);
