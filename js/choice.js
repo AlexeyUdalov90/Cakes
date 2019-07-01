@@ -16,12 +16,15 @@
       var node = this;
 
       while (node) {
-        if (node.matches(css)) return node;
-        else node = node.parentElement;
+        if (node.matches(css)) {
+          return node;
+        } else {
+          node = node.parentElement;
+        }
       }
       return null;
     };
-  };
+  }
 
   var chooseRadio = function (e) {
     var elem = e.target;
@@ -42,7 +45,7 @@
         fieldDecor.value = decors[radio.value];
         break;
     }
-  }
+  };
 
   fillingList.addEventListener('click', function (evt) {
     if(!evt.target.closest('.filling-list__button')) return;

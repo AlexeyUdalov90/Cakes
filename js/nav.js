@@ -28,16 +28,18 @@
       }
 
       function step(time) {
-        if (start === null) start = time;
+        if (start === null) {
+          start = time;
+        }
         var progress = time - start;
         var r = (blockTop < 0 ? Math.max(windowScroll - progress/speed, windowScroll + blockTop) : Math.min(windowScroll + progress/speed, windowScroll + blockTop));
         window.scrollTo(0, r);
-        if (r != windowScroll + blockTop) {
+        if (r !== windowScroll + blockTop) {
             requestAnimationFrame(step);
         } else {
             location.hash = hash;
         }
       }
-    })
+    });
   });
 })();
