@@ -24,7 +24,7 @@
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^8.3.0",
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.0",
